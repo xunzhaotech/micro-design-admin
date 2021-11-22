@@ -52,8 +52,14 @@ export const data = {
   ],
   "filePathRelative": "pages/videos/禾沐康APP功能及技术详解.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1637570873000,
+    "contributors": [
+      {
+        "name": "luyb",
+        "email": "luyb@xunzhaotech.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

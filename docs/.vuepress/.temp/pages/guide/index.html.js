@@ -76,8 +76,14 @@ export const data = {
   ],
   "filePathRelative": "guide/README.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1637570873000,
+    "contributors": [
+      {
+        "name": "luyb",
+        "email": "luyb@xunzhaotech.com",
+        "commits": 1
+      }
+    ]
   }
 }
 
