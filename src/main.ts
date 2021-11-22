@@ -1,7 +1,25 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
+import "ant-design-vue/es/style";
+import { ConfigProvider, Button } from "ant-design-vue";
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
+import icons from "./icons/index.ts";
 import router from "./router";
 import store from "./store";
 
-createApp(App).use(store).use(router).mount("#app");
+import MicroLayout, { PageContainer } from "micro-design-layout";
+
+const app = createApp(App);
+app.use(router);
+app.use(icons);
+app.use(ConfigProvider);
+app.use(Button);
+app.use(MicroLayout);
+app.use(PageContainer);
+app.mount("#app");

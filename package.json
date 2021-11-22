@@ -12,6 +12,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "ant-design-vue": "^2.2.8",
     "core-js": "^3.8.3",
     "micro-design-layout": "^1.0.4",
     "register-service-worker": "^1.7.2",
