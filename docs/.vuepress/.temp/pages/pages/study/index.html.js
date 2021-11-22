@@ -1,0 +1,46 @@
+export const data = {
+  "key": "v-401f44ac",
+  "path": "/pages/study/",
+  "title": "技术分享",
+  "lang": "zh-CN",
+  "frontmatter": {},
+  "excerpt": "",
+  "headers": [
+    {
+      "level": 2,
+      "title": "分享说明",
+      "slug": "分享说明",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "评分规则",
+      "slug": "评分规则",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "绩效奖励",
+      "slug": "绩效奖励",
+      "children": []
+    }
+  ],
+  "filePathRelative": "pages/study/Readme.md",
+  "git": {
+    "updatedTime": null,
+    "contributors": []
+  }
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
