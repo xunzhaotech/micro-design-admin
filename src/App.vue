@@ -1,9 +1,13 @@
+<!--
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+-->
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <a-config-provider>
+    <router-view />
+  </a-config-provider>
 </template>
 
 <style lang="less">

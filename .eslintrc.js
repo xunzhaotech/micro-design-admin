@@ -1,3 +1,9 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
 module.exports = {
   root: true,
   env: {
@@ -13,6 +19,9 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
+    " @typescript-eslint/no-non-null-assertion": ["off"],
+    "vue/no-unused-components": ["off"],
+    "@typescript-eslint/no-explicit-any": ["off"],
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
   },

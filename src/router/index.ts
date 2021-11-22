@@ -1,26 +1,69 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
+import { createRouter, createWebHistory } from "vue-router";
+import type { RouteRecordRaw } from "vue-router";
+import BasicLayout from "@/layouts/CustomLayout.vue";
+import RouteView from "@/layouts/RouteView.vue";
 
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
-  },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    name: "index",
+    meta: { title: "Home" },
+    component: BasicLayout,
+    redirect: "/dashboard",
+    children: [
+      {
+        path: "/dashboard",
+        name: "dashboard",
+        meta: { title: "Dashboard", icon: "DashboardOutlined" },
+        redirect: "/dashboard/monitor",
+        component: RouteView,
+        children: [
+          {
+            path: "workspace",
+            name: "workspace",
+            meta: { title: "Workspace", icon: "icon-antdesign" },
+            component: () => import("@/views/page1.vue"),
+          },
+          {
+            path: "monitor",
+            name: "monitor",
+            meta: { title: "Monitor", icon: "icon-icon-test" },
+            component: () => import("@/views/page2.vue"),
+          },
+        ],
+      },
+      {
+        path: "/form",
+        name: "form",
+        meta: { title: "Form", icon: "FormOutlined" },
+        redirect: "/form/basic-form",
+        component: RouteView,
+        children: [
+          {
+            path: "basic-form",
+            name: "basic-form",
+            meta: { title: "Basic Form" },
+            component: () => import("@/views/page1.vue"),
+          },
+        ],
+      },
+      {
+        path: "/single",
+        name: "single",
+        meta: { title: "Single", icon: "SettingOutlined" },
+        component: () => import("@/views/page1.vue"),
+      },
+    ],
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+export default createRouter({
+  history: createWebHistory(),
   routes,
 });
-
-export default router;
