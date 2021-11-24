@@ -19,6 +19,7 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
+    "@ typescript-eslint / no-non-null-assertion": ["off"],
     "@typescript-eslint/no-non-null-assertion": ["off"],
     "vue/no-unused-components": ["off"],
     "@typescript-eslint/no-explicit-any": ["off"],
