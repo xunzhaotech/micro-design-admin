@@ -6,7 +6,7 @@
  */
 import { createRouter, createWebHistory } from "vue-router";
 import type { RouteRecordRaw } from "vue-router";
-import BasicLayout from "@/layouts/CustomLayout.vue";
+import BasicLayout from "@/layouts/BlankLayout.vue";
 import RouteView from "@/layouts/RouteView.vue";
 
 const routes: RouteRecordRaw[] = [
