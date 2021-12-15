@@ -5,7 +5,7 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <a-config-provider>
+  <a-config-provider :getPopupContainer="getPopupContainer">
     <router-view />
   </a-config-provider>
 </template>

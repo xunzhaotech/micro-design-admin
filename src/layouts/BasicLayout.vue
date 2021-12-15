@@ -47,7 +47,7 @@
     <template #menuExtraRender="{ collapsed }">
       <a-input-search v-if="!collapsed" @search="handleSearch" />
     </template>
-    <template #menuFooterRender>
+    <!-- <template #menuFooterRender>
       <a
         :style="{
           lineHeight: '48rpx',
@@ -71,7 +71,7 @@
         />
         <span v-if="!baseState.collapsed">Preview Pro</span>
       </a>
-    </template>
+    </template> -->
 
     <!-- content begin -->
     <router-view v-slot="{ Component }">
