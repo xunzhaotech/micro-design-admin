@@ -14,19 +14,19 @@
     :breadcrumb="{ routes: breadcrumb }"
     iconfont-url="//at.alicdn.com/t/font_2804900_nzigh7z84gc.js"
   >
-    <template #menuHeaderRender>
+    <!-- <template #menuHeaderRender>
       <a>
         <img src="https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg" />
         <h1>Micro Layout</h1>
       </a>
-    </template>
+    </template> -->
     <!-- custom collapsed button -->
-    <template #collapsedButtonRender="collapsed">
+    <!-- <template #collapsedButtonRender="collapsed">
       <HeartOutlined v-if="collapsed" />
       <SmileOutlined v-else />
-    </template>
+    </template> -->
     <!-- custom right-content -->
-    <template #rightContentRender>
+    <!-- <template #rightContentRender>
       <div style="margin-right: 12px">
         <a-avatar shape="square" size="small">
           <template #icon>
@@ -34,19 +34,19 @@
           </template>
         </a-avatar>
       </div>
-    </template>
+    </template> -->
     <!-- custom breadcrumb itemRender  -->
-    <template #breadcrumbRender="{ route, params, routes }">
+    <!-- <template #breadcrumbRender="{ route, params, routes }">
       <span v-if="routes.indexOf(route) === routes.length - 1">
         {{ route.breadcrumbName }}
       </span>
       <router-link v-else :to="{ path: route.path, params }">
         {{ route.breadcrumbName }}
       </router-link>
-    </template>
-    <template #menuExtraRender="{ collapsed }">
+    </template> -->
+    <!-- <template #menuExtraRender="{ collapsed }">
       <a-input-search v-if="!collapsed" @search="handleSearch" />
-    </template>
+    </template> -->
     <!-- <template #menuFooterRender>
       <a
         :style="{
@@ -75,13 +75,13 @@
 
     <!-- content begin -->
     <router-view v-slot="{ Component }">
-      <WaterMark content="Micro Design">
-        <component :is="Component" />
-      </WaterMark>
+      <!-- <WaterMark content="Micro Design"> -->
+      <component :is="Component" />
+      <!-- </WaterMark> -->
     </router-view>
 
     <!-- content end -->
-    <FooterToolbar>
+    <!-- <FooterToolbar>
       <template #extra>
         <span>FooterToolbar</span>
       </template>
@@ -106,7 +106,7 @@
           <a-select-option value="mix">Mix</a-select-option>
         </a-select>
       </a-space>
-    </FooterToolbar>
+    </FooterToolbar> -->
   </micro-layout>
 </template>
 
