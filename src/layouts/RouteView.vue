@@ -5,5 +5,7 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <router-view />
+  <div id="RouteView">
+    <router-view />
+  </div>
 </template>

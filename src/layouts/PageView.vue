@@ -5,7 +5,9 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <router-view />
+  <div id="PageView">
+    <router-view />
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent, reactive } from "vue";
