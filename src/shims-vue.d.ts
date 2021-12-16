@@ -1,6 +1,14 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
 /* eslint-disable */
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
+  import { ComponentOptions } from 'vue'
+  const componentOptions: ComponentOptions
   const component: DefineComponent<{}, {}, any>
   export default component
 }

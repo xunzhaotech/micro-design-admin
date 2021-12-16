@@ -139,7 +139,6 @@ export default defineComponent({
   components: {
     FooterToolbar,
     WaterMark,
-
     [Button.name]: Button,
     [Input.name]: Input,
     [Input.Search.name]: Input.Search,
@@ -155,12 +154,12 @@ export default defineComponent({
     const loading = ref(false);
 
     const router = useRouter();
+
     const { menuData } = getMenuData(clearMenuItem(router.getRoutes()));
 
     const baseState = reactive<Omit<RouteContextProps, "menuData">>({
       selectedKeys: [],
       openKeys: [],
-      // default
       collapsed: false,
     });
 

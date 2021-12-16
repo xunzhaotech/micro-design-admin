@@ -9,14 +9,14 @@ export const pagesData = {
   "v-e6412400": () => import(/* webpackChunkName: "v-e6412400" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/en/guide/index.html.js").then(({ data }) => data),
   // path: /pages/about/
   "v-7f8dff34": () => import(/* webpackChunkName: "v-7f8dff34" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/about/index.html.js").then(({ data }) => data),
+  // path: /pages/cli/
+  "v-4f968e33": () => import(/* webpackChunkName: "v-4f968e33" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/cli/index.html.js").then(({ data }) => data),
   // path: /pages/components/BASE.html
   "v-19f2e413": () => import(/* webpackChunkName: "v-19f2e413" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BASE.html.js").then(({ data }) => data),
   // path: /pages/components/BUSINESS.html
   "v-1d73c304": () => import(/* webpackChunkName: "v-1d73c304" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BUSINESS.html.js").then(({ data }) => data),
   // path: /pages/components/
   "v-18603796": () => import(/* webpackChunkName: "v-18603796" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/index.html.js").then(({ data }) => data),
-  // path: /pages/cli/
-  "v-4f968e33": () => import(/* webpackChunkName: "v-4f968e33" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/cli/index.html.js").then(({ data }) => data),
   // path: /pages/course/backend.html
   "v-3f8fb495": () => import(/* webpackChunkName: "v-3f8fb495" */"D:/360极速浏览器下载/MicroDesign/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/backend.html.js").then(({ data }) => data),
   // path: /pages/course/deploy.html
