@@ -5,22 +5,22 @@
  * @LastEditors: xunzhaotech
  */
 import { createRouter, createWebHistory } from "vue-router";
-import type { RouteRecordRaw } from "vue-router";
+import { RouteRecordRaw } from "vue-router";
 import {
-  UserLayout,
-  BasicLayout,
+  // UserLayout,
+  // BasicLayout,
   BlankLayout,
   RouteView,
-  PageView,
+  // PageView,
 } from "@/layouts/";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    name: "index",
+    name: "Home",
     meta: { title: "Home" },
-    component: BasicLayout,
-    redirect: "/dashboard",
+    component: BlankLayout,
+    redirect: "/single1",
     children: [
       {
         path: "/dashboard",
@@ -59,9 +59,15 @@ const routes: RouteRecordRaw[] = [
         ],
       },
       {
-        path: "/single",
-        name: "single",
-        meta: { title: "Single", icon: "SettingOutlined" },
+        path: "/single1",
+        name: "single1",
+        meta: { title: "Single1", icon: "SettingOutlined" },
+        component: () => import("@/views/page1-view.vue"),
+      },
+      {
+        path: "/single2",
+        name: "single2",
+        meta: { title: "Single2", icon: "SettingOutlined" },
         component: () => import("@/views/page1-view.vue"),
       },
     ],
