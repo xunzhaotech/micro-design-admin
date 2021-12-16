@@ -6,8 +6,13 @@
  */
 import { createRouter, createWebHistory } from "vue-router";
 import type { RouteRecordRaw } from "vue-router";
-import BasicLayout from "@/layouts/BasicLayout.vue";
-import RouteView from "@/layouts/RouteView.vue";
+import {
+  UserLayout,
+  BasicLayout,
+  BlankLayout,
+  RouteView,
+  PageView,
+} from "@/layouts/";
 
 const routes: RouteRecordRaw[] = [
   {
