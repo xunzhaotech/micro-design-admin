@@ -8,8 +8,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import { RouteRecordRaw } from "vue-router";
 import {
   // UserLayout,
-  // BasicLayout,
-  BlankLayout,
+  BasicLayout,
+  // BlankLayout,
   RouteView,
   // PageView,
 } from "@/layouts/";
@@ -19,7 +19,7 @@ const routes: RouteRecordRaw[] = [
     path: "/",
     name: "Home",
     meta: { title: "Home" },
-    component: BlankLayout,
+    component: BasicLayout,
     redirect: "/single1",
     children: [
       {
