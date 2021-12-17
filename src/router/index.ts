@@ -6,6 +6,8 @@
  */
 import { createRouter, createWebHistory } from "vue-router";
 import { RouteRecordRaw } from "vue-router";
+// import BasicLayout from "@/layouts/BasicLayout.vue";
+// import RouteView from "@/layouts/RouteView.vue";
 import {
   // UserLayout,
   BasicLayout,
@@ -74,7 +76,32 @@ const routes: RouteRecordRaw[] = [
   },
 ];
 
-export default createRouter({
-  history: createWebHistory(),
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes,
+  linkActiveClass: "active-class", // 自定义class 作为 路由样式
+  linkExactActiveClass: "init-class",
+  scrollBehavior(to, from, savedPosition): any {
+    console.log(to, from, savedPosition);
+    // return 期望滚动到哪个的位置
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
 });
+
+router.beforeEach((to, from, next) => {
+  console.log(to, from);
+  next();
+});
+router.afterEach((to, from) => {
+  console.log(to, from);
+});
+router.addRoute({
+  path: "/single1",
+  component: BasicLayout,
+});
+
+export default router;
