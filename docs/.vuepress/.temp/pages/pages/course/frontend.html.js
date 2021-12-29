@@ -69,12 +69,12 @@ export const data = {
   ],
   "filePathRelative": "pages/course/frontend.md",
   "git": {
-    "updatedTime": 1637570873000,
+    "updatedTime": 1640765639000,
     "contributors": [
       {
         "name": "luyb",
         "email": "luyb@xunzhaotech.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }
