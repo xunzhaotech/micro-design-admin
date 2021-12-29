@@ -4,17 +4,16 @@
  * @QQ: 1525572900
  * @LastEditors: xunzhaotech
  */
-import { createRouter, createWebHistory } from "vue-router";
-import { RouteRecordRaw } from "vue-router";
-// import BasicLayout from "@/layouts/BasicLayout.vue";
-// import RouteView from "@/layouts/RouteView.vue";
-import {
-  // UserLayout,
-  BasicLayout,
-  // BlankLayout,
-  RouteView,
-  // PageView,
-} from "@/layouts/";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import BasicLayout from "@/layouts/BasicLayout.vue";
+import RouteView from "@/layouts/RouteView.vue";
+// import {
+//   UserLayout,
+//   BasicLayout,
+//   BlankLayout,
+//   RouteView,
+//   PageView,
+// } from "@/layouts/";
 
 const routes: RouteRecordRaw[] = [
   {

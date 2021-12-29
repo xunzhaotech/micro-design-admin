@@ -13,7 +13,7 @@ const routeItems = [
   ["v-3f8fb495","/pages/course/backend.html","后端",["/pages/course/backend","/pages/course/backend.md"]],
   ["v-27985efc","/pages/course/deploy.html","运维",["/pages/course/deploy","/pages/course/deploy.md"]],
   ["v-913323ea","/pages/course/design.html","设计",["/pages/course/design","/pages/course/design.md"]],
-  ["v-39d8ea37","/pages/course/frontend.html","VuePress",["/pages/course/frontend","/pages/course/frontend.md"]],
+  ["v-39d8ea37","/pages/course/frontend.html","Vue3入门实践指南",["/pages/course/frontend","/pages/course/frontend.md"]],
   ["v-19f9f0b6","/pages/course/operate.html","运营",["/pages/course/operate","/pages/course/operate.md"]],
   ["v-430c7b30","/pages/course/project.html","部署",["/pages/course/project","/pages/course/project.md"]],
   ["v-f00d6a72","/pages/course/prototype.html","原型",["/pages/course/prototype","/pages/course/prototype.md"]],
