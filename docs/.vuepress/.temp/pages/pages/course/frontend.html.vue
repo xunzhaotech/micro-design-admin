@@ -9,6 +9,50 @@
 <p>刚接触 Vue.js？先从<a href="https://v3.cn.vuejs.org/guide/introduction.html#vue-js-%E6%98%AF%E4%BB%80%E4%B9%88" target="_blank" rel="noopener noreferrer">基础指南<OutboundLink/></a>开始吧。</p>
 </div>
 <p>本指南主要是为有 Vue 2 经验的、希望了解 Vue 3 的新功能和更改的用户而提供的。</p>
+<h2 id="知识准备" tabindex="-1"><a class="header-anchor" href="#知识准备">#</a> 知识准备</h2>
+<ul>
+<li>Babel</li>
+<li>TypeScript</li>
+<li>Progressive Web App (PWA) Support</li>
+<li>Router</li>
+<li>Vuex</li>
+<li>CSS Pre-processors</li>
+<li>Linter</li>
+<li>Formatter</li>
+<li>Unit Testing</li>
+<li>E2E Testing</li>
+<li>class-style component</li>
+<li>polyfills</li>
+<li>JSX</li>
+<li>dart-sass</li>
+<li>node-sass</li>
+<li>Sass</li>
+<li>SCSS</li>
+<li>Less</li>
+<li>Stylus</li>
+<li>ESLint + Airbnb config</li>
+<li>ESLint + Standard config</li>
+<li>ESLint + Prettier</li>
+<li>TSLint (deprecated)</li>
+<li>TSLint (deprecated)</li>
+<li>Lint and fix on commit</li>
+<li>Lint on save</li>
+<li>unit testing
+<ul>
+<li>Mocha + Chai</li>
+<li>Jest</li>
+</ul>
+</li>
+<li>E2E testing
+<ul>
+<li>Cypress (Chrome only)</li>
+<li>Nightwatch (WebDriver-based)</li>
+<li>WebdriverIO (WebDriver/DevTools based)</li>
+</ul>
+</li>
+<li>In dedicated config files</li>
+<li>In package.json</li>
+</ul>
 <h2 id="vue-全家桶" tabindex="-1"><a class="header-anchor" href="#vue-全家桶">#</a> Vue 全家桶</h2>
 <table>
 <thead>

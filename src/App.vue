@@ -5,27 +5,36 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <a-config-provider :getPopupContainer="getPopupContainer">
+  <!-- <a-config-provider :getPopupContainer="getPopupContainer">
     <router-view />
-  </a-config-provider>
+  </a-config-provider> -->
+  <ConfigProvider :locale="zhCN">
+    <router-view v-slot="{ Component }">
+      <Suspense>
+        <component :is="Component" />
+      </Suspense>
+    </router-view>
+    <LockScreen />
+  </ConfigProvider>
 </template>
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import zhCN from "ant-design-vue/es/locale/zh_CN";
+// import { defineComponent } from "vue";
 
-export default defineComponent({
-  name: "App",
-  setup() {
-    const getPopupContainer = (el: Element, dialogContext: any) => {
-      if (dialogContext) {
-        return dialogContext.getDialogWrap();
-      }
-      return document.body;
-    };
-    return {
-      getPopupContainer,
-    };
-  },
-});
+// export default defineComponent({
+//   name: "App",
+//   setup() {
+//     const getPopupContainer = (el: Element, dialogContext: any) => {
+//       if (dialogContext) {
+//         return dialogContext.getDialogWrap();
+//       }
+//       return document.body;
+//     };
+//     return {
+//       getPopupContainer,
+//     };
+//   },
+// });
 </script>
 <style lang="less">
 #app {

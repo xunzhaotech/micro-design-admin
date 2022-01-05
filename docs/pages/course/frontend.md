@@ -9,7 +9,42 @@
 刚接触 Vue.js？先从[基础指南](https://v3.cn.vuejs.org/guide/introduction.html#vue-js-%E6%98%AF%E4%BB%80%E4%B9%88)开始吧。
 :::
 本指南主要是为有 Vue 2 经验的、希望了解 Vue 3 的新功能和更改的用户而提供的。
-
+## 知识准备
+- Babel
+- TypeScript
+- Progressive Web App (PWA) Support
+- Router
+- Vuex
+- CSS Pre-processors
+- Linter
+- Formatter
+- Unit Testing
+- E2E Testing
+- class-style component
+- polyfills
+- JSX
+- dart-sass
+- node-sass
+- Sass
+- SCSS
+- Less
+- Stylus
+- ESLint + Airbnb config
+- ESLint + Standard config
+- ESLint + Prettier
+- TSLint (deprecated)
+- TSLint (deprecated)
+- Lint and fix on commit
+- Lint on save
+- unit testing
+  - Mocha + Chai
+  - Jest
+- E2E testing
+  - Cypress (Chrome only)
+  - Nightwatch (WebDriver-based)
+  - WebdriverIO (WebDriver/DevTools based)
+- In dedicated config files
+- In package.json
 ## Vue 全家桶
 
 | 名称       | 版本                                                         |                  文档                  |                       GitHub                       |
