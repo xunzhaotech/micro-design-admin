@@ -11,7 +11,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import icons from "./icons";
-import router from "./router";
+import router from "./router/index";
 import store from "./store";
 
 import MicroLayout, { PageContainer } from "micro-design-layout";

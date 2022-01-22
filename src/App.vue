@@ -5,51 +5,43 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <!-- <a-config-provider :getPopupContainer="getPopupContainer">
-    <router-view />
-  </a-config-provider> -->
-  <!-- <ConfigProvider :locale="zhCN">
-    <router-view v-slot="{ Component }">
-      <Suspense>
-        <component :is="Component" />
-      </Suspense>
-    </router-view>
-    <LockScreen />
-  </ConfigProvider> -->
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
   <router-view />
 </template>
-<script lang="ts">
-import { defineComponent } from "vue";
-export default defineComponent({
-  name: "indexMaster",
-  data() {
-    return {};
-  },
-});
-// import zhCN from "ant-design-vue/es/locale/zh_CN";
-// import { defineComponent } from "vue";
 
-// export default defineComponent({
-//   name: "App",
-//   setup() {
-//     const getPopupContainer = (el: Element, dialogContext: any) => {
-//       if (dialogContext) {
-//         return dialogContext.getDialogWrap();
-//       }
-//       return document.body;
-//     };
-//     return {
-//       getPopupContainer,
-//     };
-//   },
-// });
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+@Options({
+  components: {
+    HelloWorld,
+  },
+})
+export default class Home extends Vue {}
 </script>
+
 <style lang="less">
 #app {
-  height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
