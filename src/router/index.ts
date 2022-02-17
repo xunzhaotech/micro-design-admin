@@ -5,8 +5,8 @@
  * @LastEditors: xunzhaotech
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import BasicLayout from "@/layouts/BasicLayout.vue";
-import RouteView from "@/layouts/RouteView.vue";
+import BasicLayout from "@/layouts/BasicLayout/index.vue";
+import RouteView from "@/layouts/RouteView/index.vue";
 // import {
 //   UserLayout,
 //   BasicLayout,

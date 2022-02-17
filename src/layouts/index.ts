@@ -4,9 +4,9 @@
  * @QQ: 1525572900
  * @LastEditors: xunzhaotech
  */
-import UserLayout from "./UserLayout.vue";
-import BlankLayout from "./BlankLayout.vue";
-import BasicLayout from "./BasicLayout.vue";
-import RouteView from "./RouteView.vue";
-import PageView from "./PageView.vue";
+import UserLayout from "./UserLayout/index.vue";
+import BlankLayout from "./BlankLayout/index.vue";
+import BasicLayout from "./BasicLayout/index.vue";
+import RouteView from "./RouteView/index.vue";
+import PageView from "./PageView/index.vue";
 export { UserLayout, BasicLayout, BlankLayout, RouteView, PageView };
