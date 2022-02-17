@@ -5,22 +5,20 @@
  * @LastEditors: xunzhaotech
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import BasicLayout from "@/layouts/BasicLayout/index.vue";
-import RouteView from "@/layouts/RouteView/index.vue";
-// import {
-//   UserLayout,
-//   BasicLayout,
-//   BlankLayout,
-//   RouteView,
-//   PageView,
-// } from "@/layouts/";
+import {
+  UserLayout,
+  // BasicLayout,
+  // BlankLayout,
+  RouteView,
+  // PageView,
+} from "@/layouts/";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "Home",
     meta: { title: "Home" },
-    component: BasicLayout,
+    component: UserLayout,
     redirect: "/single1",
     children: [
       {
@@ -49,7 +47,7 @@ const routes: RouteRecordRaw[] = [
         name: "form",
         meta: { title: "Form", icon: "FormOutlined" },
         redirect: "/form/basic-form",
-        component: RouteView,
+        component: UserLayout,
         children: [
           {
             path: "basic-form",

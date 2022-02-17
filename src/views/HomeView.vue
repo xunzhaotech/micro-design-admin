@@ -13,6 +13,17 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
   components: {
     HelloWorld,
   },
+  data() {
+    return {
+      bigsize: false,
+    };
+  },
+  methods: {
+    sizeClick() {
+      this.$data.bigsize = !this.$data.bigsize;
+    },
+  },
+  computed: {},
 })
 export default class HomeView extends Vue {}
 </script>
