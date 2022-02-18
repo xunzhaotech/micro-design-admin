@@ -16,7 +16,7 @@
     <template #menuHeaderRender>
       <a>
         <img src="https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg" />
-        <h1>Micro Layout</h1>
+        <h1>Micro Amdin</h1>
       </a>
     </template>
     <!-- only work layout `Side` -->
