@@ -15,18 +15,18 @@
   </micro-layout>
 </template>
 <script setup lang="ts">
+import { reactive } from "vue";
 import { useRouter } from "vue-router";
 // import type { RouteContextProps } from "micro-design-layout";
-import { reactive } from "vue";
 // import {message,Button,Input,Switch,Select,Avatar,Space,Badge,Menu,} from "ant-design-vue";
 import { getMenuData, clearMenuItem } from "micro-design-layout";
 
-const locale = (i18n: string) => i18n;
 const router = useRouter();
-
 const { menuData } = getMenuData(clearMenuItem(router.getRoutes()));
+console.log(11111111);
 console.log(menuData);
 
+const locale = (i18n: string) => i18n;
 const baseState = reactive({
   collapsed: true, // default value
   openKeys: ["/dashboard"],

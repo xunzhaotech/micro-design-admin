@@ -5,16 +5,16 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <micro-layout
-    v-model:collapsed="baseState.collapsed"
-    v-model:selectedKeys="baseState.selectedKeys"
-    v-model:openKeys="baseState.openKeys"
-    v-bind="state"
-    :loading="loading"
-    :breadcrumb="{ routes: breadcrumb }"
-    iconfont-url="//at.alicdn.com/t/font_2804900_nzigh7z84gc.js"
-  >
-  </micro-layout>
+  <div id="userLayout"></div>
+  <router-view />
+  <div class="footer">
+    <div class="links">
+      <a href="_self">帮助</a>
+      <a href="_self">隐私</a>
+      <a href="_self">条款</a>
+    </div>
+    <div class="copyright">Copyright &copy; 2018 vueComponent</div>
+  </div>
 </template>
 
 <script lang="ts">
