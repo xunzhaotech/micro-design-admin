@@ -19,9 +19,9 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import { computed, defineComponent, reactive, ref, watchEffect } from "vue";
-import { useRouter } from "vue-router";
-import type { RouteContextProps } from "micro-design-layout";
+// import { computed, defineComponent, reactive, ref, watchEffect } from "vue";
+// import { useRouter } from "vue-router";
+// import type { RouteContextProps } from "micro-design-layout";
 import {
   // message,
   Button,
@@ -72,12 +72,19 @@ import {
   computed: {},
   mounted() {
     document.body.classList.add("userLayout");
+    console.log(11111111111);
+    console.log(document.body.classList);
   },
   beforeDestroy() {
     document.body.classList.remove("userLayout");
   },
 })
-export default class UserLayout extends Vue {}
+export default class UserLayout extends Vue {
+  // @prop(Boolean) private xsmall: boolean | undefined;
+  // @prop(Boolean) private small: boolean | undefined;
+  // @prop(Boolean) private large: boolean | undefined;
+  // @prop(Boolean) private xlarge: boolean | undefined;
+}
 
 // export default defineComponent({
 //   name: "BasicLayout",
