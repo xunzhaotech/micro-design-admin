@@ -67,7 +67,6 @@ export default defineComponent({
     const baseState = reactive<Omit<RouteContextProps, "menuData">>({
       selectedKeys: [],
       openKeys: [],
-      // default
       collapsed: false,
     });
 

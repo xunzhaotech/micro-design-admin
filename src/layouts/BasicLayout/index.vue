@@ -28,7 +28,7 @@ const { menuData } = getMenuData(clearMenuItem(router.getRoutes()));
 console.log(menuData);
 
 const baseState = reactive({
-  collapsed: false, // default value
+  collapsed: true, // default value
   openKeys: ["/dashboard"],
   selectedKeys: ["/welcome"],
 });
