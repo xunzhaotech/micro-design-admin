@@ -82,12 +82,12 @@ export const data = {
   ],
   "filePathRelative": "guide/README.md",
   "git": {
-    "updatedTime": 1637570873000,
+    "updatedTime": 1645167579000,
     "contributors": [
       {
         "name": "luyb",
         "email": "luyb@xunzhaotech.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

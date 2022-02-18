@@ -120,3 +120,24 @@
 ## TypeScript学习
 - http://ts.xcatliu.com
 - https://typescript.bootcss.com
+## vue-router加载组件的方法
+### import加载
+1. 一般方法
+```vue
+import Login from '../views/Login.vue'
+```
+2. 按需加载
+```vue
+const Login= () => import("../views/Login.vue")
+```
+### require加载
+1. 非按需加载（注意需要加上.default）
+```vue
+const Login= require("../views/Login.vue").default
+```
+2. 按需加载
+```
+const Login= (resolve) => {
+	require(["../views/Login.vue"],resolve)
+}
+```

@@ -77,16 +77,35 @@ export const data = {
       "title": "TypeScript学习",
       "slug": "typescript学习",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "vue-router加载组件的方法",
+      "slug": "vue-router加载组件的方法",
+      "children": [
+        {
+          "level": 3,
+          "title": "import加载",
+          "slug": "import加载",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "require加载",
+          "slug": "require加载",
+          "children": []
+        }
+      ]
     }
   ],
   "filePathRelative": "pages/course/frontend.md",
   "git": {
-    "updatedTime": 1641361065000,
+    "updatedTime": 1645167579000,
     "contributors": [
       {
         "name": "luyb",
         "email": "luyb@xunzhaotech.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   }

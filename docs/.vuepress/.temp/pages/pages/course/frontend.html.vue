@@ -158,4 +158,25 @@ vue create hello-vue3
 <li>http://ts.xcatliu.com</li>
 <li>https://typescript.bootcss.com</li>
 </ul>
-</template>
+<h2 id="vue-router加载组件的方法" tabindex="-1"><a class="header-anchor" href="#vue-router加载组件的方法">#</a> vue-router加载组件的方法</h2>
+<h3 id="import加载" tabindex="-1"><a class="header-anchor" href="#import加载">#</a> import加载</h3>
+<ol>
+<li>一般方法</li>
+</ol>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>import Login from '../views/Login.vue'
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><ol start="2">
+<li>按需加载</li>
+</ol>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>const Login= () => import("../views/Login.vue")
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><h3 id="require加载" tabindex="-1"><a class="header-anchor" href="#require加载">#</a> require加载</h3>
+<ol>
+<li>非按需加载（注意需要加上.default）</li>
+</ol>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>const Login= require("../views/Login.vue").default
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><ol start="2">
+<li>按需加载</li>
+</ol>
+<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>const Login= (resolve) => {
+	require(["../views/Login.vue"],resolve)
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></template>
