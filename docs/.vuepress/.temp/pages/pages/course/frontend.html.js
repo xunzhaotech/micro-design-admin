@@ -71,6 +71,12 @@ export const data = {
       "title": "组件",
       "slug": "组件",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "TypeScript学习",
+      "slug": "typescript学习",
+      "children": []
     }
   ],
   "filePathRelative": "pages/course/frontend.md",

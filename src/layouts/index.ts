@@ -4,10 +4,18 @@
  * @QQ: 1525572900
  * @LastEditors: xunzhaotech
  */
-import UserLayout from "./UserLayout/index.vue";
-import BlankLayout from "./BlankLayout/index.vue";
-import BasicLayout from "./BasicLayout/index.vue";
-import RouteView from "./RouteView/index.vue";
-import PageView from "./PageView/index.vue";
-// import CustomLayout from "./CustomLayout/index.vue";
-export { UserLayout, BasicLayout, BlankLayout, RouteView, PageView };
+
+const UserLayout = () => import("./UserLayout/index.vue");
+const BlankLayout = () => import("./BlankLayout/index.vue");
+const BasicLayout = () => import("./BasicLayout/index.vue");
+const RouteView = () => import("./RouteView/index.vue");
+const PageView = () => import("./PageView/index.vue");
+const CustomLayout = () => import("./CustomLayout/index.vue");
+export {
+  UserLayout,
+  BasicLayout,
+  BlankLayout,
+  RouteView,
+  PageView,
+  CustomLayout,
+};

@@ -63,3 +63,34 @@ nvm是nodejs的版本管理工具
 - [uView](https://www.uviewui.com/)
 - [color-ui](http://demo.color-ui.com/)
 - [awesome-wepy](https://github.com/aben1188/awesome-wepy)
+## vue-router引入
+```vue
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue')
+  }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
+
+export default router
+
+
+```

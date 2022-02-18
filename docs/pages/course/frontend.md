@@ -117,3 +117,6 @@
 - [异步组件现在需要使用 `defineAsyncComponent` 方法来创建](https://v3.cn.vuejs.org/guide/migration/async-components.html)
 - [组件事件现在需要在 `emits` 选项中声明](https://v3.cn.vuejs.org/guide/migration/emits-option.html)
 
+## TypeScript学习
+- http://ts.xcatliu.com
+- https://typescript.bootcss.com

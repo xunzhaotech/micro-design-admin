@@ -5,21 +5,21 @@
  * @LastEditors: xunzhaotech
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-// import {
-//   UserLayout,
-//   BasicLayout,
-//   BlankLayout,
-//   RouteView,
-//   PageView,
-//   CustomLayout,
-// } from "@/layouts/";
+import {
+  UserLayout,
+  // BasicLayout,
+  // BlankLayout,
+  // RouteView,
+  // PageView,
+  // CustomLayout,
+} from "@/layouts/";
 
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
     name: "Home",
     meta: { title: "Home" },
-    component: () => import("@/layouts/CustomLayout/index.vue"),
+    component: UserLayout,
     redirect: "/single1",
     children: [
       {

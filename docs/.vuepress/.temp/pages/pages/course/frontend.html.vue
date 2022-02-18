@@ -153,4 +153,9 @@ vue create hello-vue3
 <li><a href="https://v3.cn.vuejs.org/guide/migration/async-components.html" target="_blank" rel="noopener noreferrer">异步组件现在需要使用 <code>defineAsyncComponent</code> 方法来创建<OutboundLink/></a></li>
 <li><a href="https://v3.cn.vuejs.org/guide/migration/emits-option.html" target="_blank" rel="noopener noreferrer">组件事件现在需要在 <code>emits</code> 选项中声明<OutboundLink/></a></li>
 </ul>
+<h2 id="typescript学习" tabindex="-1"><a class="header-anchor" href="#typescript学习">#</a> TypeScript学习</h2>
+<ul>
+<li>http://ts.xcatliu.com</li>
+<li>https://typescript.bootcss.com</li>
+</ul>
 </template>

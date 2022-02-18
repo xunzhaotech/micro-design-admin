@@ -82,4 +82,33 @@ nvm是nodejs的版本管理工具</p>
 <li><a href="http://demo.color-ui.com/" target="_blank" rel="noopener noreferrer">color-ui<OutboundLink/></a></li>
 <li><a href="https://github.com/aben1188/awesome-wepy" target="_blank" rel="noopener noreferrer">awesome-wepy<OutboundLink/></a></li>
 </ul>
-</template>
+<h2 id="vue-router引入" tabindex="-1"><a class="header-anchor" href="#vue-router引入">#</a> vue-router引入</h2>
+<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code>import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue')
+  }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
+
+export default router
+
+
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div></template>

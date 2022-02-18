@@ -72,6 +72,12 @@ export const data = {
       "title": "小程序",
       "slug": "小程序",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "vue-router引入",
+      "slug": "vue-router引入",
+      "children": []
     }
   ],
   "filePathRelative": "guide/README.md",
