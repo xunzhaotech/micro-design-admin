@@ -21,21 +21,19 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: true, //关闭eslint检查
   chainWebpack: (config) => {
-    console.log(11111111);
-    console.log(config.mode);
-    //   config.resolve.alias
-    //   .set('@', resolve('src'))
-    //   .set('@img',resolve('src/assets/img'))
-    //   .set('@styl',resolve('src/assets/styl'))
-    //   .set('@js',resolve('src/assets/js'))
-    //   .set('@ts',resolve('src/assets/ts'))
-    //   .set('@fonts', resolve('src/assets/fonts'))
-    //   .set('@css', resolve('src/assets/css'))
-    //   .set('@libs',resolve('src/libs'))
-    //   .set('@cp',resolve('src/components'))
-    //   .set('@views',resolve('src/views'))
-    //   .set('@plugins',resolve('src/plugins'))
-    //   .end()
+    console.log(config);
+    // config.resolve.alias.set("@', resolve('src'))
+    // .set('@img',resolve('src/assets/img'))
+    // .set('@styl',resolve('src/assets/styl'))
+    // .set('@js',resolve('src/assets/js'))
+    // .set('@ts',resolve('src/assets/ts'))
+    // .set('@fonts', resolve('src/assets/fonts'))
+    // .set('@css', resolve('src/assets/css'))
+    // .set('@libs',resolve('src/libs'))
+    // .set('@components',resolve('src/components'))
+    // .set('@views',resolve('src/views'))
+    // .set('@plugins',resolve('src/plugins'))
+    // .end()
   },
   configureWebpack: (config) => {
     // 开启顶级await
