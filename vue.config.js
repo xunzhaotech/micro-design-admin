@@ -10,7 +10,7 @@ const path = require("path");
 const dayjs = require("dayjs");
 const pkg = require("./package.json");
 // const { config } = require("process");
-// const resolve = (dir: string) => path.join(__dirname, dir);
+const resolve = (dir) => path.join(__dirname, dir);
 // chainWebpack: (config:Config) => {
 console.log(path.resolve());
 const __APP_INFO__ = {
@@ -21,19 +21,24 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: true, //关闭eslint检查
   chainWebpack: (config) => {
-    console.log(config);
-    // config.resolve.alias.set("@', resolve('src'))
-    // .set('@img',resolve('src/assets/img'))
-    // .set('@styl',resolve('src/assets/styl'))
-    // .set('@js',resolve('src/assets/js'))
-    // .set('@ts',resolve('src/assets/ts'))
-    // .set('@fonts', resolve('src/assets/fonts'))
-    // .set('@css', resolve('src/assets/css'))
-    // .set('@libs',resolve('src/libs'))
-    // .set('@components',resolve('src/components'))
-    // .set('@views',resolve('src/views'))
-    // .set('@plugins',resolve('src/plugins'))
-    // .end()
+    // config.devtool = "source-map";
+    config.plugin("html").tap((args) => {
+      args[0].title = "test";
+      return args;
+    });
+    config.resolve.alias
+      .set("@", resolve("src"))
+      .set("@img", resolve("src/assets/img"))
+      .set("@styl", resolve("src/assets/styl"))
+      .set("@js", resolve("src/assets/js"))
+      .set("@ts", resolve("src/assets/ts"))
+      .set("@fonts", resolve("src/assets/fonts"))
+      .set("@css", resolve("src/assets/css"))
+      .set("@libs", resolve("src/libs"))
+      .set("@components", resolve("src/components"))
+      .set("@views", resolve("src/views"))
+      .set("@plugins", resolve("src/plugins"))
+      .end();
   },
   configureWebpack: (config) => {
     // 开启顶级await
