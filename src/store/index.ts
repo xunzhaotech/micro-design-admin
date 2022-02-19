@@ -1,4 +1,5 @@
 // import { createStore } from "vuex";
+import { createPinia } from "pinia";
 
 // export default createStore({
 //   state: {},
@@ -7,7 +8,6 @@
 //   actions: {},
 //   modules: {},
 // });
-import { createPinia } from "pinia";
 
 const store = createPinia();
 
