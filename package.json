@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^2.2.8",
+    "axios": "^0.20.0-0",
     "core-js": "^3.8.3",
     "dayjs": "^1.10.7",
     "micro-design-layout": "^1.0.4",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "@types/store": "^2.0.2",
+    "@types/axios": "^0.14.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0-rc.1",

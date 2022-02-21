@@ -1,4 +1,4 @@
-import { mapState } from "vuex";
+// import { mapState } from "vuex";
 
 const deviceMixin = {
   // computed: {
