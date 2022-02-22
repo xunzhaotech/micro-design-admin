@@ -40,3 +40,6 @@ const baseState = reactive({
 // });
 // export default class BasicLayout extends Vue {}
 </script>
+<style lang="less" scoped>
+@import "index";
+</style>

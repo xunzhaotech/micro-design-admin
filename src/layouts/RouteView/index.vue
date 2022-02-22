@@ -17,3 +17,6 @@ import { Options, Vue } from "vue-class-component";
 })
 export default class RouteView extends Vue {}
 </script>
+<style lang="less" scoped>
+@import "index";
+</style>
