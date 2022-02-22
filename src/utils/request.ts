@@ -1,9 +1,10 @@
 import axios, { AxiosRequestConfig } from "axios";
 import { message as $message } from "ant-design-vue";
-// import { ACCESS_TOKEN_KEY } from "@/enums/cacheEnum";
-// import { Storage } from "@/utils/Storage";
+import { ACCESS_TOKEN_KEY } from "@/enums/cacheEnum";
+import { Storage } from "@/utils/Storage";
 // import { useUserStore } from "@/store/modules/user";
 // import {ExclamationCircleOutlined} from '@ant-design/icons'
+console.log(ACCESS_TOKEN_KEY);
 
 export interface RequestOptions {
   /** 当前接口权限, 不需要鉴权的接口请忽略， 格式：sys:user:add */
@@ -33,8 +34,7 @@ const service = axios.create({
 
 service.interceptors.request.use(
   (config) => {
-    // const token = Storage.get(ACCESS_TOKEN_KEY);
-    const token = "123";
+    const token = Storage.get(ACCESS_TOKEN_KEY);
     if (token && config.headers) {
       // 请求头token信息，请根据实际情况进行修改
       config.headers["Authorization"] = token;
@@ -116,6 +116,7 @@ export const request = async <T = any>(
       isMock,
       isGetDataDirectly = true,
     } = options;
+    console.log(permCode);
     // 如果当前是需要鉴权的接口 并且没有权限的话 则终止请求发起
     // if (permCode && !useUserStore().perms.includes(permCode)) {
     //   return $message.error("你没有访问该接口的权限，请联系管理员！");
