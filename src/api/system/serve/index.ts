@@ -1,9 +1,9 @@
-import { request } from "@/utils/request";
-import ServeApi from "@/core/permission/modules/sys/serve";
+// import { request } from "@/utils/request";
+// import ServeApi from "@/core/permission/modules/sys/serve";
 
-export function getServeStat() {
-  return request<API.SysServeStat>({
-    url: ServeApi.stat,
-    method: "get",
-  });
-}
+// export function getServeStat() {
+//   return request<API.SysServeStat>({
+//     url: ServeApi.stat,
+//     method: "get",
+//   });
+// }

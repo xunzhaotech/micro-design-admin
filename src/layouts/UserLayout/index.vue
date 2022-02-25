@@ -5,7 +5,10 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <div id="userLayout" class="user-layout-wrapper">sfsfsf</div>
+  <div id="userLayout" class="user-layout-wrapper">
+    <!-- <s-table :columns="columns" :data-source="dataSource"></s-table> -->
+    <s-table :columns="[]" :data-source="[]"></s-table>
+  </div>
   <router-view />
   <div class="footer">
     <div class="links">
@@ -62,6 +65,8 @@ import {
   data() {
     return {
       bigsize: false,
+      columns: [],
+      dataSource: [],
     };
   },
   methods: {
@@ -72,7 +77,7 @@ import {
   computed: {},
   mounted() {
     document.body.classList.add("userLayout");
-    console.log(11111111111);
+
     console.log(document.body.classList);
   },
   beforeDestroy() {
@@ -80,6 +85,8 @@ import {
   },
 })
 export default class UserLayout extends Vue {
+  private columns: any = [];
+  private dataSource: any = [];
   // @prop(Boolean) private xsmall: boolean | undefined;
   // @prop(Boolean) private small: boolean | undefined;
   // @prop(Boolean) private large: boolean | undefined;

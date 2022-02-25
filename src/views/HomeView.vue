@@ -25,5 +25,13 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
   },
   computed: {},
 })
-export default class HomeView extends Vue {}
+export default class HomeView extends Vue {
+  private name = 0;
+  private msg = 0;
+
+  public clickFunc(): void {
+    console.log(this.name);
+    console.log(this.msg);
+  }
+}
 </script>
