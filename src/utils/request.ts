@@ -3,20 +3,17 @@ import axios, { AxiosRequestConfig } from "axios";
 import { ACCESS_TOKEN_KEY } from "@/enums/cacheEnum";
 import { Storage } from "@/utils/Storage";
 import { RequestOptions } from "@/interface/requestOptionsInterface";
+import { baseApiUrl, baseMockUrl } from "@/config/default.setting";
 // import { useUserStore } from "@/store/modules/user";
 // import {ExclamationCircleOutlined} from '@ant-design/icons'
 console.log(ACCESS_TOKEN_KEY);
 
 const UNKNOWN_ERROR = "未知错误，请重试";
-// 是否生产环境
-// const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
-/** 真实请求的路径前缀 */
-const baseApiUrl = process.env.VUE_APP_BASE_API;
-/** mock请求路径前缀 */
-const baseMockUrl = process.env.VUE_APP_MOCK_API;
+
+const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 
 const service = axios.create({
-  // baseURL: baseApiUrl,
+  baseURL: baseApiUrl,
   timeout: 6000,
 });
 
