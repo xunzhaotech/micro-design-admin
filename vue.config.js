@@ -23,7 +23,7 @@ module.exports = defineConfig({
   chainWebpack: (config) => {
     // config.devtool = "source-map";
     config.plugin("html").tap((args) => {
-      args[0].title = "test";
+      args[0].title = "Micro Admin";
       return args;
     });
     config.resolve.alias

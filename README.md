@@ -1,4 +1,4 @@
-# micro-design-admin
+# Micro Admin
 
 ## Project setup
 ```
@@ -31,6 +31,7 @@ yarn lint
 ```
 ### 学习网址
 - https://github.com/vue3/vue3-News
+- Deployment
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
