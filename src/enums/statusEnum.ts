@@ -1,6 +1,6 @@
 export enum StatusEnum {
   // 管理员
-  ADMIN = "admin",
+  UNKNOWN_ERROR = "未知错误，请重试",
 
   // 普通用户
   NORMAL = "normal",
