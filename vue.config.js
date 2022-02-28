@@ -58,11 +58,20 @@ module.exports = defineConfig({
     port: 8000,
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
     proxy: {
-      "/api": {
-        target: "https://mock.ihx.me/mock/5baf3052f7da7e07e04a5116/antd-pro",
-        ws: false,
+      [process.env.VUE_APP_BASE_API]: {
+        target: "http://192.168.50.88:8301/",
         changeOrigin: true,
+        pathRewrite: {
+          ["^" + process.env.VUE_APP_BASE_API]: "",
+        },
       },
+      // "/api": {
+      //   target: "https://mock.ihx.me/mock/5baf3052f7da7e07e04a5116/antd-pro",
+      //   ws: false,
+      //   changeOrigin: true,
+      // },
     },
   },
 });
+console.log(11111111111);
+console.log(process.env.VUE_APP_BASE_API);
