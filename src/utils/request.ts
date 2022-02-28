@@ -6,11 +6,9 @@ import { RequestOptions } from "@/interface/requestOptionsInterface";
 import { baseApiUrl, baseMockUrl } from "@/config/default.setting";
 // import { useUserStore } from "@/store/modules/user";
 // import { ExclamationCircleOutlined } from "@ant-design/icons";
-console.log(ACCESS_TOKEN_KEY);
+// const UNKNOWN_ERROR = "未知错误，请重试";
 
-const UNKNOWN_ERROR = "未知错误，请重试";
-
-const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
+// const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 
 // 创建 axios 实例
 // baseURL: process.env.VUE_APP_API_BASE_URL,
