@@ -13,7 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "types": [
       "webpack-env",
       "jest"
@@ -31,6 +31,8 @@
     ]
   },
   "include": [
+    "**/*.ts", 
+    "**/*.tsx",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",

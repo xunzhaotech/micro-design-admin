@@ -5,23 +5,23 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <div id="userLayout" class="user-layout-wrapper">
-    <!-- <s-table :columns="columns" :data-source="dataSource"></s-table> -->
-    <s-table :columns="[]" :data-source="[]"></s-table>
-  </div>
-  <router-view />
-  <div class="footer">
-    <div class="links">
-      <a href="_self">帮助</a>
-      <a href="_self">隐私</a>
-      <a href="_self">条款</a>
+  <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']">
+    <router-view />
+    <div class="footer">
+      <div class="links">
+        <a href="_self">帮助</a>
+        <a href="_self">隐私</a>
+        <a href="_self">条款</a>
+      </div>
+      <div class="copyright">Copyright &copy; 2020 vueComponent</div>
     </div>
-    <div class="copyright">Copyright &copy; 2020 vueComponent</div>
   </div>
 </template>
+import { }
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import { deviceMixin } from "@/mixins/device-mixin";
 // import { computed, defineComponent, reactive, ref, watchEffect } from "vue";
 // import { useRouter } from "vue-router";
 // import type { RouteContextProps } from "micro-design-layout";
@@ -46,11 +46,10 @@ import {
 // const i18n = (t: string) => t;
 @Options({
   name: "BasicLayout",
-  mixins: [],
+  mixins: [deviceMixin],
   components: {
     FooterToolbar,
     WaterMark,
-
     [Button.name]: Button,
     [Input.name]: Input,
     [Input.Search.name]: Input.Search,

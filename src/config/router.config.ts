@@ -1,9 +1,9 @@
 import { RouteRecordRaw } from "vue-router";
 import {
-  // UserLayout,
+  UserLayout,
   // BasicLayout,
   // BlankLayout,
-  RouteView,
+  // RouteView,
   // PageView,
   // CustomLayout,
 } from "@/layouts/";
@@ -19,7 +19,7 @@ export const asyncRouterMap: RouteRecordRaw[] = [];
 export const constantRouterMap: RouteRecordRaw[] = [
   {
     path: "/",
-    component: RouteView,
+    component: UserLayout,
     redirect: "/login",
     // hidden: true,
     children: [

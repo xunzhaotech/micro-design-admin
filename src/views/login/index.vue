@@ -1,75 +1,83 @@
 <template>
-  <div class="login-box">
-    <div class="login-logo">
-      <svg-icon name="logo" :size="45" />
-      <img src="~@/assets/images/logo.svg" alt="" />
-      <h1 class="mb-0 ml-2 text-3xl font-bold">Micro Admin</h1>
+  <div class="micro-main">
+    <div class="user-layout-login">
+      <a-row :gutter="16">
+        <a-col class="gutter-row" :span="12">
+          <div class="login-logo">
+            <svg-icon name="logo" :size="45" />
+            <!-- <img src="~@/assets/images/logo.svg" alt="" /> -->
+            <h1 class="mb-0 ml-2 text-3xl font-bold">Micro Admin</h1>
+          </div>
+        </a-col>
+        <a-col class="gutter-row" :span="12">
+          <a-form
+            layout="horizontal"
+            :model="state.formInline"
+            @submit.prevent="handleSubmit"
+          >
+            <a-form-item>
+              <a-input
+                v-model:value="state.formInline.username"
+                size="large"
+                placeholder="rootadmin"
+              >
+                <template #prefix><user-outlined type="user" /></template>
+              </a-input>
+            </a-form-item>
+            <a-form-item>
+              <a-input
+                v-model:value="state.formInline.password"
+                size="large"
+                type="password"
+                placeholder="123456"
+                autocomplete="new-password"
+              >
+                <template #prefix><lock-outlined type="user" /></template>
+              </a-input>
+            </a-form-item>
+            <a-form-item>
+              <a-input
+                v-model:value="state.formInline.verifyCode"
+                placeholder="验证码"
+                :maxlength="4"
+                size="large"
+              >
+                <template #prefix><SafetyOutlined /></template>
+                <template #suffix>
+                  <img
+                    :src="state.captcha"
+                    class="absolute right-0 h-full cursor-pointer"
+                    @click="setCaptcha"
+                  />
+                </template>
+              </a-input>
+            </a-form-item>
+            <a-form-item>
+              <a-button
+                type="primary"
+                html-type="submit"
+                size="large"
+                :loading="state.loading"
+                block
+              >
+                登录
+              </a-button>
+            </a-form-item>
+          </a-form>
+        </a-col>
+      </a-row>
     </div>
-    <a-form
-      layout="horizontal"
-      :model="state.formInline"
-      @submit.prevent="handleSubmit"
-    >
-      <a-form-item>
-        <a-input
-          v-model:value="state.formInline.username"
-          size="large"
-          placeholder="rootadmin"
-        >
-          <template #prefix><user-outlined type="user" /></template>
-        </a-input>
-      </a-form-item>
-      <a-form-item>
-        <a-input
-          v-model:value="state.formInline.password"
-          size="large"
-          type="password"
-          placeholder="123456"
-          autocomplete="new-password"
-        >
-          <template #prefix><lock-outlined type="user" /></template>
-        </a-input>
-      </a-form-item>
-      <a-form-item>
-        <a-input
-          v-model:value="state.formInline.verifyCode"
-          placeholder="验证码"
-          :maxlength="4"
-          size="large"
-        >
-          <template #prefix><SafetyOutlined /></template>
-          <template #suffix>
-            <img
-              :src="state.captcha"
-              class="absolute right-0 h-full cursor-pointer"
-              @click="setCaptcha"
-            />
-          </template>
-        </a-input>
-      </a-form-item>
-      <a-form-item>
-        <a-button
-          type="primary"
-          html-type="submit"
-          size="large"
-          :loading="state.loading"
-          block
-        >
-          登录
-        </a-button>
-      </a-form-item>
-    </a-form>
   </div>
 </template>
 
 <script setup lang="ts">
 import { reactive } from "vue";
 import { message } from "ant-design-vue";
-// import {
-//   UserOutlined,
-//   LockOutlined,
-//   SafetyOutlined,
-// } from "@ant-design/icons-vue";
+import {
+  UserOutlined,
+  LockOutlined,
+  SafetyOutlined,
+} from "@ant-design/icons-vue";
 // import { useUserStore } from "@/store/modules/user";
 import { getImageCaptcha } from "@/api/login";
 // import { SvgIcon } from "@/components/basic/svg-icon";
@@ -108,8 +116,7 @@ const handleSubmit = async () => {
   }
   message.loading("登录中...", 0);
   state.loading = true;
-  console.log(state.formInline);
-  // params.password = md5(password)
+  // params.password = md5(password);
   // try {
   //   await userStore.login(state.formInline).finally(() => {
   //     state.loading = false;

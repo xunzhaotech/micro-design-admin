@@ -1,6 +1,11 @@
-// import { mapState } from "vuex";
+import { mapState } from "vuex";
 
 const deviceMixin = {
+  computed: {
+    ...mapState({
+      isMobile: (state) => state.app.isMobile,
+    }),
+  },
   // computed: {
   //   ...mapState({
   //     layout: {state) => state.app.layout,
