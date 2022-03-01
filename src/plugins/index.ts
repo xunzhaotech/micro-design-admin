@@ -1,20 +1,39 @@
+import type { App } from "vue";
+import STable from "@surely-vue/table";
 // import { setApp } from "./setupApp/index.ts";
 // import { setupPlugin } from "./setupPlugins/setupAntd.ts";
 import {
   ConfigProvider,
   Button,
-  Form,
-  FormItem,
-  message,
   Modal,
+  Table,
+  Menu,
+  Input,
+  Form,
+  Card,
+  Checkbox,
+  Radio,
+  Col,
+  Row,
+  Select,
+  DatePicker,
 } from "ant-design-vue";
-import STable from "@surely-vue/table";
-export const plugin = (app: any): void => {
+
+export const plugin = (app: App<Element>): void => {
   app.use(ConfigProvider);
   app.use(Button);
   app.use(STable);
   app.use(Form);
-  app.use(FormItem);
-  app.use(message);
   app.use(Modal);
+  app.use(Table);
+  app.use(Menu);
+  app.use(Input);
+  app.use(Modal);
+  app.use(Card);
+  app.use(Checkbox);
+  app.use(Radio);
+  app.use(Col);
+  app.use(Row);
+  app.use(Select);
+  app.use(DatePicker);
 };
