@@ -61,17 +61,19 @@ module.exports = defineConfig({
       [process.env.VUE_APP_BASE_API]: {
         target: "http://192.168.50.88:8301/",
         changeOrigin: true,
+        ws: false,
         pathRewrite: {
           ["^" + process.env.VUE_APP_BASE_API]: "",
         },
       },
-      // "/api": {
-      //   target: "https://mock.ihx.me/mock/5baf3052f7da7e07e04a5116/antd-pro",
-      //   ws: false,
-      //   changeOrigin: true,
-      // },
+      [process.env.VUE_APP_BASE_SOCKET_PATH]: {
+        target: "http://192.168.50.88:8301/",
+        changeOrigin: true,
+        ws: false,
+        pathRewrite: {
+          ["^" + process.env.VUE_APP_BASE_SOCKET_PATH]: "",
+        },
+      },
     },
   },
 });
-console.log(11111111111);
-console.log(process.env.VUE_APP_BASE_API);
