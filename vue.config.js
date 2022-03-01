@@ -39,6 +39,20 @@ module.exports = defineConfig({
       .set("@views", resolve("src/views"))
       .set("@plugins", resolve("src/plugins"))
       .end();
+    // svg rule loader
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.exclude.add(resolve("src/user")).end();
+    config.module
+      .rule("icons")
+      .test(/\.svg$/)
+      .include.add(resolve("src/assets/icons"))
+      .end()
+      .use("svg-sprite-loader")
+      .loader("svg-sprite-loader")
+      .options({
+        symbolId: "icon-[name]",
+      });
   },
   configureWebpack: (config) => {
     // 开启顶级await

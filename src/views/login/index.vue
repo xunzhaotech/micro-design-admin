@@ -2,8 +2,8 @@
   <div class="login-box">
     <div class="login-logo">
       <svg-icon name="logo" :size="45" />
-      <!--      <img src="~@/assets/images/logo.png" alt="">-->
-      <h1 class="mb-0 ml-2 text-3xl font-bold">Antd Admin</h1>
+      <!-- <img src="~@/assets/images/logo.png" alt="" /> -->
+      <h1 class="mb-0 ml-2 text-3xl font-bold">Micro Admin</h1>
     </div>
     <a-form
       layout="horizontal"
@@ -128,36 +128,5 @@ const handleSubmit = async () => {
 </script>
 
 <style lang="less" scoped>
-.login-box {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 240px;
-  // background: url("~@/assets/login.svg");
-  background-size: 100%;
-  flex-direction: column;
-  align-items: center;
-
-  .login-logo {
-    display: flex;
-    margin-bottom: 30px;
-    align-items: center;
-
-    .svg-icon {
-      font-size: 48px;
-    }
-  }
-
-  :deep(.ant-form) {
-    width: 400px;
-
-    .ant-col {
-      width: 100%;
-    }
-
-    .ant-form-item-label {
-      padding-right: 6px;
-    }
-  }
-}
+@import url("./index.less");
 </style>
