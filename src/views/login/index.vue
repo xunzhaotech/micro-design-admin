@@ -2,7 +2,7 @@
   <div class="login-box">
     <div class="login-logo">
       <svg-icon name="logo" :size="45" />
-      <!-- <img src="~@/assets/images/logo.png" alt="" /> -->
+      <img src="~@/assets/images/logo.svg" alt="" />
       <h1 class="mb-0 ml-2 text-3xl font-bold">Micro Admin</h1>
     </div>
     <a-form
