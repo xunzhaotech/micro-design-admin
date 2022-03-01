@@ -64,7 +64,7 @@
 
 <script setup lang="ts">
 import { reactive } from "vue";
-import { message, Modal } from "ant-design-vue";
+import { message } from "ant-design-vue";
 // import {
 //   UserOutlined,
 //   LockOutlined,
@@ -73,7 +73,7 @@ import { message, Modal } from "ant-design-vue";
 // import { useUserStore } from "@/store/modules/user";
 import { getImageCaptcha } from "@/api/login";
 // import { SvgIcon } from "@/components/basic/svg-icon";
-import { useRoute, useRouter } from "vue-router";
+// import { useRoute, useRouter } from "vue-router";
 
 const state = reactive({
   loading: false,
@@ -86,8 +86,8 @@ const state = reactive({
   },
 });
 
-const route = useRoute();
-const router = useRouter();
+// const route = useRoute();
+// const router = useRouter();
 
 // const userStore = useUserStore();
 
@@ -133,7 +133,7 @@ const handleSubmit = async () => {
   width: 100vw;
   height: 100vh;
   padding-top: 240px;
-  background: url("~@/assets/login.svg");
+  // background: url("~@/assets/login.svg");
   background-size: 100%;
   flex-direction: column;
   align-items: center;

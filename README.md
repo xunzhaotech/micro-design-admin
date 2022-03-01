@@ -107,5 +107,76 @@ import zhCN from "ant-design-vue/es/locale/zh_CN";
   background-color: #fff;
 }
 </style>
+```
+
+```vue
+import {
+  UserLayout,
+  // BasicLayout,
+  // BlankLayout,
+  // RouteView,
+  // PageView,
+  // CustomLayout,
+} from "@/layouts/";
+
+// const routes: RouteRecordRaw[] = [
+// {
+//   path: "/",
+//   name: "Home",
+//   meta: { title: "Home" },
+//   component: UserLayout,
+//   redirect: "/single1",
+//   children: [
+//     {
+//       path: "/dashboard",
+//       name: "dashboard",
+//       meta: { title: "Dashboard", icon: "DashboardOutlined" },
+//       redirect: "/dashboard/monitor",
+//       component: () => import("@/views/page1-view.vue"),
+//       children: [
+//         {
+//           path: "workspace",
+//           name: "workspace",
+//           meta: { title: "Workspace", icon: "icon-antdesign" },
+//           component: () => import("@/views/page1-view.vue"),
+//         },
+//         {
+//           path: "monitor",
+//           name: "monitor",
+//           meta: { title: "Monitor", icon: "icon-icon-test" },
+//           component: () => import("@/views/page2.vue"),
+//         },
+//       ],
+//     },
+//     {
+//       path: "/form",
+//       name: "form",
+//       meta: { title: "Form", icon: "FormOutlined" },
+//       redirect: "/form/basic-form",
+//       component: () => import("@/views/page1-view.vue"),
+//       children: [
+//         {
+//           path: "basic-form",
+//           name: "basic-form",
+//           meta: { title: "Basic Form" },
+//           component: () => import("@/views/page1-view.vue"),
+//         },
+//       ],
+//     },
+//     {
+//       path: "/single1",
+//       name: "single1",
+//       meta: { title: "Single1", icon: "SettingOutlined" },
+//       component: () => import("@/views/page1-view.vue"),
+//     },
+//     {
+//       path: "/single2",
+//       name: "single2",
+//       meta: { title: "Single2", icon: "SettingOutlined" },
+//       component: () => import("@/views/page1-view.vue"),
+//     },
+//   ],
+// },
+// ];
 
 ```
