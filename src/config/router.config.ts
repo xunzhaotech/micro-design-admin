@@ -27,7 +27,7 @@ export const constantRouterMap: RouteRecordRaw[] = [
         path: "login",
         name: "login",
         component: () =>
-          import(/* webpackChunkName: "user" */ "@/views/login/index.vue"),
+          import(/* webpackChunkName: "user" */ "@/views/HomeView.vue"),
       },
       {
         path: "register2",

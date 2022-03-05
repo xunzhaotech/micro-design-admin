@@ -129,6 +129,23 @@ er, Unit, E2E
 ? Save this as a preset for future projects? (y/N)
 
 ```
+5. 组件编写
+```vue
+import { Options, Vue } from 'vue-class-component';
+@Options({
+    emits: ["myEvent"]
+})
+export default class MyComponent extends Vue {
+    myMethod(){
+        this.$emit('myEvent')
+    }
+}
+```
+6. 安装vuex
+```bash
+安装：npm install vuex@next --save
+```
+
 ## 版本
 - 稳定版：npm package
 

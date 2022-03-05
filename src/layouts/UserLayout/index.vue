@@ -5,7 +5,8 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']">
+  <!-- <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']"> -->
+  <div id="userLayout" class="user-layout-wrapper">
     <router-view />
     <div class="footer">
       <div class="links">
@@ -17,10 +18,10 @@
     </div>
   </div>
 </template>
-import { }
-
 <script lang="ts">
+// import { ref } from "vue";
 import { Options, Vue } from "vue-class-component";
+// import { Options, setup, Vue } from "vue-class-component";
 import { deviceMixin } from "@/mixins/device-mixin";
 // import { computed, defineComponent, reactive, ref, watchEffect } from "vue";
 // import { useRouter } from "vue-router";
@@ -45,7 +46,7 @@ import {
 
 // const i18n = (t: string) => t;
 @Options({
-  name: "BasicLayout",
+  name: "UserLayout",
   mixins: [deviceMixin],
   components: {
     FooterToolbar,
@@ -84,8 +85,16 @@ import {
   },
 })
 export default class UserLayout extends Vue {
+  public flag = 2;
   private columns: any = [];
   private dataSource: any = [];
+  // msg!: string;
+  // flag!: string;
+  public initVar!: string;
+  public mounted(): void {
+    this.initVar = "测试";
+  }
+
   // @prop(Boolean) private xsmall: boolean | undefined;
   // @prop(Boolean) private small: boolean | undefined;
   // @prop(Boolean) private large: boolean | undefined;
