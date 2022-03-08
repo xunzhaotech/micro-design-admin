@@ -141,11 +141,15 @@ export default class MyComponent extends Vue {
     }
 }
 ```
-6. 安装vuex
+## vuex4.0 使用
 ```bash
-安装：npm install vuex@next --save
+npm install vuex@next --save
 ```
-
+### 安装
+### state
+### getters
+### mutations
+### actions
 ## 版本
 - 稳定版：npm package
 

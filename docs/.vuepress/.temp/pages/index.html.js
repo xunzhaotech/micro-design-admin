@@ -53,6 +53,43 @@ export const data = {
     },
     {
       "level": 2,
+      "title": "vuex4.0 使用",
+      "slug": "vuex4-0-使用",
+      "children": [
+        {
+          "level": 3,
+          "title": "安装",
+          "slug": "安装-1",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "state",
+          "slug": "state",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "getters",
+          "slug": "getters",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "mutations",
+          "slug": "mutations",
+          "children": []
+        },
+        {
+          "level": 3,
+          "title": "actions",
+          "slug": "actions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": 2,
       "title": "版本",
       "slug": "版本",
       "children": []
@@ -60,12 +97,12 @@ export const data = {
   ],
   "filePathRelative": "README.md",
   "git": {
-    "updatedTime": 1637570873000,
+    "updatedTime": 1646458454000,
     "contributors": [
       {
         "name": "luyb",
         "email": "luyb@xunzhaotech.com",
-        "commits": 2
+        "commits": 3
       }
     ]
   }

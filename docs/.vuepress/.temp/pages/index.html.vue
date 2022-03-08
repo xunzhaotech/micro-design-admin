@@ -101,7 +101,14 @@ export default class MyComponent extends Vue {
         this.$emit('myEvent')
     }
 }
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="版本" tabindex="-1"><a class="header-anchor" href="#版本">#</a> 版本</h2>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="vuex4-0-使用" tabindex="-1"><a class="header-anchor" href="#vuex4-0-使用">#</a> vuex4.0 使用</h2>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> vuex@next --save
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><h3 id="安装-1" tabindex="-1"><a class="header-anchor" href="#安装-1">#</a> 安装</h3>
+<h3 id="state" tabindex="-1"><a class="header-anchor" href="#state">#</a> state</h3>
+<h3 id="getters" tabindex="-1"><a class="header-anchor" href="#getters">#</a> getters</h3>
+<h3 id="mutations" tabindex="-1"><a class="header-anchor" href="#mutations">#</a> mutations</h3>
+<h3 id="actions" tabindex="-1"><a class="header-anchor" href="#actions">#</a> actions</h3>
+<h2 id="版本" tabindex="-1"><a class="header-anchor" href="#版本">#</a> 版本</h2>
 <ul>
 <li>稳定版：npm package</li>
 </ul>

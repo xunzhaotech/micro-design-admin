@@ -1,5 +1,7 @@
 // import { createApp } from "vue";
-import { createStore } from "vuex";
+import { InjectionKey } from "vue";
+import { createStore, Store } from "vuex";
+import RootSateTypes from "@/interface/store/rootStateTypes";
 // import state from "./state";
 // import mutations from "./mutations";
 // import actions from "./actions";
@@ -31,17 +33,31 @@ import { createStore } from "vuex";
 //   actions,
 //   modules,
 // });
-const store = createStore({
-  state() {
-    return {
-      count: 1,
-      list: ["a", "b", "c"],
-    };
+// const store = createStore<RootSateTypes>({
+//   state() {
+//     return {
+//       count: 1,
+//       list: ["a", "b", "c"],
+//     };
+//   },
+//   mutations: {
+//     increment(state: any): void {
+//       state.count++;
+//     },
+//   },
+// });
+const store = createStore<RootSateTypes>({
+  state: {
+    test: "",
   },
+  getters: {},
   mutations: {
     increment(state: any): void {
       state.count++;
     },
   },
+  actions: {},
+  modules: {},
 });
+export const key: InjectionKey<Store<RootSateTypes>> = Symbol("vue-store");
 export default store;

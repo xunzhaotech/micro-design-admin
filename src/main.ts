@@ -13,13 +13,13 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import icons from "./icons";
 import router from "./router";
-import store from "./store";
+import store, { key } from "./store";
 
 const app = createApp(App);
+plugin(app);
 app.use(router);
 app.use(icons);
-app.use(store);
+app.use(store, key);
 app.use(MicroLayout);
 app.use(PageContainer);
-plugin(app);
 app.mount("#app");
