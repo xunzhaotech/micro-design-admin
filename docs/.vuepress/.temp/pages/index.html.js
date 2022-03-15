@@ -97,12 +97,12 @@ export const data = {
   ],
   "filePathRelative": "README.md",
   "git": {
-    "updatedTime": 1646458454000,
+    "updatedTime": 1646705826000,
     "contributors": [
       {
         "name": "luyb",
         "email": "luyb@xunzhaotech.com",
-        "commits": 3
+        "commits": 4
       }
     ]
   }

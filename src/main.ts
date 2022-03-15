@@ -4,11 +4,11 @@
  * @QQ: 1525572900
  * @LastEditors: xunzhaotech
  */
+import { createApp } from "vue";
+import MicroLayout, { PageContainer } from "micro-design-layout";
 import "ant-design-vue/dist/antd.css";
 import "micro-design-layout/dist/style.css";
-import MicroLayout, { PageContainer } from "micro-design-layout";
 import { plugin } from "@/plugins";
-import { createApp } from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import icons from "./icons";
