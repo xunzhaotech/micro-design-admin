@@ -19,12 +19,12 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
-    // "prettier/prettier": [
-    //   "error",
-    //   {
-    //     endOfLine: "auto",
-    //   },
-    // ],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     "@typescript-eslint / no-non-null-assertion": ["off"],
     "@typescript-eslint/no-non-null-assertion": ["off"],
     "vue/no-unused-components": ["off"],
