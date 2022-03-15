@@ -1,4 +1,9 @@
 import { RouteRecordRaw } from "vue-router";
+// import { bxAnaalyse } from "@/core/icons";
+// const RouteView = {
+//   name: "RouteView",
+//   render: (h: any) => h("router-view"),
+// };
 import {
   UserLayout,
   // BasicLayout,
@@ -11,35 +16,48 @@ import {
  * 动态路由
  * @type { *[] }
  */
-export const asyncRouterMap: RouteRecordRaw[] = [];
+export const asyncRouterMap: RouteRecordRaw[] = [
+  {
+    path: "*",
+    redirect: "/404",
+    // hidden: true,
+  },
+];
 /**
  * 基础路由
  * @type { *[] }
  */
 export const constantRouterMap: RouteRecordRaw[] = [
   {
-    path: "/",
+    path: "/user",
     component: UserLayout,
-    redirect: "/login",
+    redirect: "user/login",
     // hidden: true,
     children: [
       {
         path: "login",
         name: "login",
         component: () =>
-          import(/* webpackChunkName: "user" */ "@/views/HomeView.vue"),
+          import(
+            /* webpackChunkName: "user" */ "@/views/system/user/login/index.vue"
+          ),
       },
       {
-        path: "register2",
-        name: "register2",
+        path: "register",
+        name: "register",
         component: () =>
-          import(/* webpackChunkName: "user" */ "@/views/login/index.vue"),
+          import(
+            /* webpackChunkName: "user" */
+            "@/views/system/user/register/index.vue"
+          ),
       },
       {
         path: "register-result",
         name: "registerResult",
         component: () =>
-          import(/* webpackChunkName: "user" */ "@/views/login/index.vue"),
+          import(
+            /* webpackChunkName: "user" */ "@/views/system/user/register-result/index.vue"
+          ),
       },
       // {
       //   path: "recover",
@@ -48,10 +66,10 @@ export const constantRouterMap: RouteRecordRaw[] = [
       // },
     ],
   },
-  // {
-  //   path: "/404",
-  //   component: () =>
-  //     import(/* webpackChunkName: "fail" */ "@/views/exception/404.vue"),
-  // },
+  {
+    path: "/404",
+    component: () =>
+      import(/* webpackChunkName: "fail" */ "@/views/exception/404/index.vue"),
+  },
 ];
 export default constantRouterMap;

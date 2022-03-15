@@ -17,7 +17,37 @@ const __APP_INFO__ = {
   pkg,
   lastBuildTime: dayjs().format("YYYY-MM-DD HH:mm:ss"),
 };
-module.exports = defineConfig({
+// 请求代理地址
+const proxy = {
+  "/dev": {
+    target: "http://127.0.0.1:8001",
+    changeOrigin: true,
+    rewrite: (path) => path.replace(/^\/dev/, ""),
+  },
+
+  "/pro": {
+    target: "https://show.cool-admin.com",
+    changeOrigin: true,
+    rewrite: (path) => path.replace(/^\/pro/, "/api"),
+  },
+  [process.env.VUE_APP_BASE_API]: {
+    target: "http://192.168.50.88:8301/",
+    changeOrigin: true,
+    ws: false,
+    pathRewrite: {
+      ["^" + process.env.VUE_APP_BASE_API]: "",
+    },
+  },
+  [process.env.VUE_APP_BASE_SOCKET_PATH]: {
+    target: "http://192.168.50.88:8301/",
+    changeOrigin: true,
+    ws: false,
+    pathRewrite: {
+      ["^" + process.env.VUE_APP_BASE_SOCKET_PATH]: "",
+    },
+  },
+};
+const config = defineConfig({
   transpileDependencies: true,
   lintOnSave: true, //关闭eslint检查
   chainWebpack: (config) => {
@@ -71,23 +101,7 @@ module.exports = defineConfig({
   devServer: {
     port: 8000,
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
-    proxy: {
-      [process.env.VUE_APP_BASE_API]: {
-        target: "http://192.168.50.88:8301/",
-        changeOrigin: true,
-        ws: false,
-        pathRewrite: {
-          ["^" + process.env.VUE_APP_BASE_API]: "",
-        },
-      },
-      [process.env.VUE_APP_BASE_SOCKET_PATH]: {
-        target: "http://192.168.50.88:8301/",
-        changeOrigin: true,
-        ws: false,
-        pathRewrite: {
-          ["^" + process.env.VUE_APP_BASE_SOCKET_PATH]: "",
-        },
-      },
-    },
+    proxy: proxy,
   },
 });
+module.exports = config;

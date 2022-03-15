@@ -11,6 +11,8 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
+    // 严格属性初始化
+    "strictPropertyInitialization": false,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
