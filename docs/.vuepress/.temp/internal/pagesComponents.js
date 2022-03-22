@@ -113,6 +113,8 @@ export const pagesComponents = {
   "v-5422904e": defineAsyncComponent(() => import(/* webpackChunkName: "v-5422904e" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/templates/index.html.vue")),
   // path: /en/pages/tools/
   "v-3e8b8c28": defineAsyncComponent(() => import(/* webpackChunkName: "v-3e8b8c28" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/tools/index.html.vue")),
+  // path: /pages/project/angular/
+  "v-0f7a7432": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f7a7432" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/angular/index.html.vue")),
   // path: /en/pages/videos/APP%E7%9B%B4%E6%92%AD%E6%B5%81%E7%A8%8B.html
   "v-6cd3cda9": defineAsyncComponent(() => import(/* webpackChunkName: "v-6cd3cda9" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/videos/APP直播流程.html.vue")),
   // path: /en/pages/videos/
@@ -123,8 +125,6 @@ export const pagesComponents = {
   "v-6128f872": defineAsyncComponent(() => import(/* webpackChunkName: "v-6128f872" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/videos/混合APP打包.html.vue")),
   // path: /en/pages/videos/%E7%A6%BE%E6%B2%90%E5%BA%B7APP%E5%8A%9F%E8%83%BD%E5%8F%8A%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3.html
   "v-31e7dbe4": defineAsyncComponent(() => import(/* webpackChunkName: "v-31e7dbe4" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/videos/禾沐康APP功能及技术详解.html.vue")),
-  // path: /pages/project/angular/
-  "v-0f7a7432": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f7a7432" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/angular/index.html.vue")),
   // path: /pages/project/micrcservice/
   "v-4dddc7b8": defineAsyncComponent(() => import(/* webpackChunkName: "v-4dddc7b8" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/micrcservice/index.html.vue")),
   // path: /pages/project/react/

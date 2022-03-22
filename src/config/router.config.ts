@@ -29,13 +29,13 @@ export const asyncRouterMap: RouteRecordRaw[] = [
  */
 export const constantRouterMap: RouteRecordRaw[] = [
   {
-    path: "/user",
+    path: "/",
     component: UserLayout,
-    redirect: "user/login",
+    redirect: "/user/login",
     // hidden: true,
     children: [
       {
-        path: "login",
+        path: "/login",
         name: "login",
         component: () =>
           import(
@@ -43,7 +43,7 @@ export const constantRouterMap: RouteRecordRaw[] = [
           ),
       },
       {
-        path: "register",
+        path: "/register",
         name: "register",
         component: () =>
           import(
@@ -52,7 +52,7 @@ export const constantRouterMap: RouteRecordRaw[] = [
           ),
       },
       {
-        path: "register-result",
+        path: "/register-result",
         name: "registerResult",
         component: () =>
           import(

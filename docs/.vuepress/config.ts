@@ -59,8 +59,8 @@ export default defineUserConfig<DefaultThemeOptions>({
   port: 8080,
   open: false,
   pagePatterns: ["**/*.md", "!.vuepress", "!node_modules"],
-  //  templateDev: '@vuepress/client/templates/index.dev.html',
-  //  templateSSR: '@vuepress/client/templates/index.ssr.html',
+  // templateDev: "@vuepress/client/templates/index.dev.html",
+  // templateSSR: "@vuepress/client/templates/index.ssr.html",
   shouldPreload: true,
   shouldPrefetch: false,
   /**

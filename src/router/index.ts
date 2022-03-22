@@ -6,6 +6,10 @@
  */
 import { createRouter, createWebHistory } from "vue-router";
 import { constantRouterMap } from "@/config/router.config";
+import NProgress from "nprogress"; // progress bar
+// import { TO_DISPLAY_STRING } from "@vue/compiler-core";
+import { ACCESS_TOKEN } from "@/store/mutation-types";
+import storage from "store";
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes: constantRouterMap,
@@ -23,7 +27,13 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  console.log(`${to},1111111111${from}`);
+  NProgress.start(); // start progress bar;
+  storage.get(ACCESS_TOKEN);
+  console.log(111111111);
+  // console.log(Object.keys(to));
+  // Object.keys(to).map((item) => {});
+  // console.log(to[item]);
+  // to.meta && (typeof to.meta.title !== "undefined";)
   next();
 });
 router.afterEach((to, from) => {
