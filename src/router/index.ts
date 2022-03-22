@@ -25,20 +25,31 @@ const router = createRouter({
     }
   },
 });
-
+/**
+ * @fullPath: "/user/login"
+ * @hash: ""
+ * @href: "/user/login"
+ * @matched: []
+ * @meta: {}
+ * @name: undefined
+ * @params: {}
+ * @path: "/user/login"
+ * @query: {}
+ * @redirectedFrom: undefined
+ */
 router.beforeEach((to, from, next) => {
   NProgress.start(); // start progress bar;
-  storage.get(ACCESS_TOKEN);
-  console.log(111111111);
+  const token = storage.get(ACCESS_TOKEN);
+  console.log(token);
   // console.log(Object.keys(to));
   // Object.keys(to).map((item) => {});
   // console.log(to[item]);
   // to.meta && (typeof to.meta.title !== "undefined";)
   next();
 });
-router.afterEach((to, from) => {
-  console.log(`${to},222222222${from}`);
-});
+// router.afterEach((to, from) => {
+//   console.log(`${to},222222222${from}`);
+// });
 // router.addRoute({
 //   path: "/",
 //   component: UserLayout,
