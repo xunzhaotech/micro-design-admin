@@ -5,16 +5,18 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <!-- <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']"> -->
-  <div id="userLayout" class="user-layout-wrapper">
-    <router-view />
-    <div class="footer">
-      <div class="links">
-        <a href="_self">帮助</a>
-        <a href="_self">隐私</a>
-        <a href="_self">条款</a>
-      </div>
-      <div class="copyright">Copyright &copy; 2020 vueComponent</div>
+  <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']">
+    <div class="container">
+      <header>MicroAdmin</header>
+      <router-view />
+      <footer class="footer">
+        <div class="links">
+          <a href="_self">帮助</a>
+          <a href="_self">隐私</a>
+          <a href="_self">条款</a>
+        </div>
+        <div class="copyright">Copyright &copy; 2020 vueComponent</div>
+      </footer>
     </div>
   </div>
 </template>
@@ -64,6 +66,7 @@ import {
   },
   data() {
     return {
+      isMobile: true,
       bigsize: false,
       columns: [],
       dataSource: [],
@@ -85,6 +88,7 @@ import {
   },
 })
 export default class UserLayout extends Vue {
+  isMobile = true;
   public flag = 2;
   private columns: any = [];
   private dataSource: any = [];

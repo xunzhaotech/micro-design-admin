@@ -1,6 +1,15 @@
-// import { mapState } from "vuex";
-
+import { useStore } from "vuex";
+import { computed } from "vue";
+const store = useStore();
 const deviceMixin = {
+  // state
+  isMobile: computed(() => store.state.app.isMobile),
+  // getter
+  // double: computed(() => store.getters.doubleCount),
+  // mutations
+  // increment: () => store.commit("countIncrement"),
+  // actions
+  // asyncIncrement: () => store.dispatch("asyncCountIncrement"),
   // computed: {
   //   ...mapState({
   //     isMobile: (state) => state.app.isMobile,

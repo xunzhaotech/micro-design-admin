@@ -48,7 +48,7 @@ import RootSateTypes from "@/interface/store/rootStateTypes";
 // });
 const store = createStore<RootSateTypes>({
   state: {
-    test: "",
+    isMobile: "",
   },
   getters: {},
   mutations: {
