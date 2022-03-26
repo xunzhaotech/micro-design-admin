@@ -1,7 +1,12 @@
-import { useStore } from "vuex";
+import { createNamespacedHelpers, useStore } from "vuex";
 import { computed } from "vue";
+const { mapState, mapActions } = createNamespacedHelpers("user"); // 通过这个函数来辅助我们找到user模块
 const store = useStore();
 const deviceMixin = {
+  // computed: {
+  //   ...mapState({
+  //       token: state => state.token, //指定模块后，这里默认就是获取user下面的state了
+  // })
   // state
   isMobile: computed(() => store.state.app.isMobile),
   // getter

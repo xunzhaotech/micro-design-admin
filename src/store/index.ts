@@ -2,6 +2,9 @@
 import { InjectionKey } from "vue";
 import { createStore, Store } from "vuex";
 import RootSateTypes from "@/interface/store/rootStateTypes";
+import { app } from "./modules/about";
+// import state from "./state";
+import getters from "./getters";
 // import state from "./state";
 // import mutations from "./mutations";
 // import actions from "./actions";
@@ -46,18 +49,30 @@ import RootSateTypes from "@/interface/store/rootStateTypes";
 //     },
 //   },
 // });
-const store = createStore<RootSateTypes>({
-  state: {
-    isMobile: "",
-  },
-  getters: {},
-  mutations: {
-    increment(state: any): void {
-      state.count++;
-    },
-  },
-  actions: {},
-  modules: {},
-});
+// const store = createStore<RootSateTypes>({
+//   state: {
+//     isMobile: "",
+//   },
+//   getters: {},
+//   mutations: {
+//     increment(state: any): void {
+//       state.count++;
+//     },
+//   },
+//   actions: {},
+//   modules: {},
+// });
 export const key: InjectionKey<Store<RootSateTypes>> = Symbol("vue-store");
+
+const store = createStore<RootSateTypes>({
+  // namespaced: true,
+  // state,
+  getters,
+  // mutations,
+  // actions,
+  // modules,
+  modules: {
+    app,
+  },
+});
 export default store;
