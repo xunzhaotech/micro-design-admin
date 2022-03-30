@@ -17,6 +17,8 @@ export const pagesData = {
   "v-1d73c304": () => import(/* webpackChunkName: "v-1d73c304" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BUSINESS.html.js").then(({ data }) => data),
   // path: /pages/components/
   "v-18603796": () => import(/* webpackChunkName: "v-18603796" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/index.html.js").then(({ data }) => data),
+  // path: /pages/outsource/
+  "v-10e08eec": () => import(/* webpackChunkName: "v-10e08eec" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/outsource/index.html.js").then(({ data }) => data),
   // path: /pages/course/backend.html
   "v-3f8fb495": () => import(/* webpackChunkName: "v-3f8fb495" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/backend.html.js").then(({ data }) => data),
   // path: /pages/course/deploy.html
@@ -35,8 +37,6 @@ export const pagesData = {
   "v-b7fa4892": () => import(/* webpackChunkName: "v-b7fa4892" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/test.html.js").then(({ data }) => data),
   // path: /pages/course/ui.html
   "v-21f84ef5": () => import(/* webpackChunkName: "v-21f84ef5" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/ui.html.js").then(({ data }) => data),
-  // path: /pages/outsource/
-  "v-10e08eec": () => import(/* webpackChunkName: "v-10e08eec" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/outsource/index.html.js").then(({ data }) => data),
   // path: /pages/standard/ANDROID.html
   "v-6dfc8758": () => import(/* webpackChunkName: "v-6dfc8758" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/ANDROID.html.js").then(({ data }) => data),
   // path: /pages/standard/IOS.html

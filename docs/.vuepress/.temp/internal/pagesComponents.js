@@ -19,6 +19,8 @@ export const pagesComponents = {
   "v-1d73c304": defineAsyncComponent(() => import(/* webpackChunkName: "v-1d73c304" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BUSINESS.html.vue")),
   // path: /pages/components/
   "v-18603796": defineAsyncComponent(() => import(/* webpackChunkName: "v-18603796" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/index.html.vue")),
+  // path: /pages/outsource/
+  "v-10e08eec": defineAsyncComponent(() => import(/* webpackChunkName: "v-10e08eec" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/outsource/index.html.vue")),
   // path: /pages/course/backend.html
   "v-3f8fb495": defineAsyncComponent(() => import(/* webpackChunkName: "v-3f8fb495" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/backend.html.vue")),
   // path: /pages/course/deploy.html
@@ -37,8 +39,6 @@ export const pagesComponents = {
   "v-b7fa4892": defineAsyncComponent(() => import(/* webpackChunkName: "v-b7fa4892" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/test.html.vue")),
   // path: /pages/course/ui.html
   "v-21f84ef5": defineAsyncComponent(() => import(/* webpackChunkName: "v-21f84ef5" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/ui.html.vue")),
-  // path: /pages/outsource/
-  "v-10e08eec": defineAsyncComponent(() => import(/* webpackChunkName: "v-10e08eec" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/outsource/index.html.vue")),
   // path: /pages/standard/ANDROID.html
   "v-6dfc8758": defineAsyncComponent(() => import(/* webpackChunkName: "v-6dfc8758" */"D:/项目资料/project/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/ANDROID.html.vue")),
   // path: /pages/standard/IOS.html

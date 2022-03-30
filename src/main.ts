@@ -11,7 +11,7 @@ import "micro-design-layout/dist/style.css";
 import { plugin } from "@/plugins";
 import App from "./App.vue";
 import "./registerServiceWorker";
-// import "./styles/global.less";
+import "./styles/global.less";
 import icons from "./icons";
 import router from "./router";
 import store, { key } from "./store";

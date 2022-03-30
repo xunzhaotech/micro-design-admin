@@ -2,6 +2,8 @@ import { createNamespacedHelpers, useStore } from "vuex";
 import { computed } from "vue";
 const { mapState, mapActions } = createNamespacedHelpers("user"); // 通过这个函数来辅助我们找到user模块
 const store = useStore();
+console.log(mapState);
+console.log(mapActions);
 const deviceMixin = {
   // computed: {
   //   ...mapState({

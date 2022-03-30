@@ -98,13 +98,24 @@ const config = defineConfig({
       })
     );
   },
-  // css: {
-  //   loaderOptions: {
-  //     less: {
-  //       javascriptEnabled: true, //允许链式调用的换行
-  //     },
-  //   },
-  // },
+  css: {
+    extract: true,
+    sourceMap: false,
+    // lessOptions?
+    // webpackImporter
+    // additionalData
+    // implementation
+    loaderOptions: {
+      sass: {
+        // data: ''//`@import "@/assets/scss/mixin.scss";`
+      },
+      less: {
+        lessOptions: {
+          javascriptEnabled: true, //允许链式调用的换行
+        },
+      },
+    },
+  },
   devServer: {
     port: 8000,
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
