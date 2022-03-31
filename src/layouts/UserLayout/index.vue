@@ -5,10 +5,18 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']">
+  <div id="microLayout" :class="['micro-layout-wrapper', isMobile && 'mobile']">
     <div class="container">
-      <header>MicroAdmin</header>
-      <router-view />
+      <!-- top -->
+      <header class="top">
+        <h1 class="header">MicroAadmin</h1>
+        <p class="desc">一个基于企业的管理系统</p>
+      </header>
+      <!-- content -->
+      <section class="main">
+        <router-view />
+      </section>
+      <!-- footer -->
       <footer class="footer">
         <div class="links">
           <a href="_self">帮助</a>

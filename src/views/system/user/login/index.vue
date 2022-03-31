@@ -1,7 +1,9 @@
 <template>
   <div class="micro-main">
     <div class="user-layout-login">
-      <div class="container" style="background: dodgerblue">212</div>
+      <div class="container">
+        <div class="micro-login-box"></div>
+      </div>
     </div>
   </div>
 </template>
