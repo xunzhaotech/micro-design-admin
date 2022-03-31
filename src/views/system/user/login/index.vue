@@ -1,75 +1,55 @@
 <template>
   <div class="micro-main">
-    <div class="user-layout-login">
-      <div class="container">
-        <div class="micro-login-box"></div>
-      </div>
-    </div>
+    <a-form id="formLogin" class="user-layout-login" ref="formLogin"></a-form>
   </div>
 </template>
 
-<script setup lang="ts">
-import { reactive } from "vue";
-// import { message } from "ant-design-vue";
-// import {
-//   UserOutlined,
-//   LockOutlined,
-//   SafetyOutlined,
-// } from "@ant-design/icons-vue";
-// import { useUserStore } from "@/store/modules/user";
-import { getImageCaptcha } from "@/api/login";
-// import { SvgIcon } from "@/components/basic/svg-icon";
-// import { useRoute, useRouter } from "vue-router";
+<script lang="ts">
+import { mapState } from "vuex";
+import { Options, Vue } from "vue-class-component";
+import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
-const state = reactive({
-  loading: false,
-  captcha: "",
-  formInline: {
-    username: "",
-    password: "",
-    verifyCode: "",
-    captchaId: "",
+@Options({
+  components: {
+    HelloWorld,
   },
-});
+  data() {
+    return {
+      bigsize: false,
+      form: this.$form,
+    };
+  },
+  methods: {
+    sizeClick() {
+      this.$data.bigsize = !this.$data.bigsize;
+    },
+    handleSubmit(e: any) {
+      console.log(e);
+    },
+  },
+  computed: {
+    mylist(): string[] {
+      return this.$store.state.list;
+    },
+    ...mapState({
+      count: (state: any) => state.count,
+      list: (state: any) => state.list,
+    }),
+  },
+})
+export default class HomeView extends Vue {
+  private name = "123";
+  private msg = "234";
+  // super(name: string, msg: string) {
+  //   this.name = name;
+  //   this.age = age;
+  // }
 
-// const route = useRoute();
-// const router = useRouter();
-
-// const userStore = useUserStore();
-
-const setCaptcha = async () => {
-  const { id, img } = await getImageCaptcha({ width: 100, height: 50 });
-  state.captcha = img;
-  state.formInline.captchaId = id;
-};
-setCaptcha();
-
-// const handleSubmit = async () => {
-//   const { username, password, verifyCode } = state.formInline;
-//   if (username.trim() == "" || password.trim() == "") {
-//     return message.warning("用户名或密码不能为空！");
-//   }
-//   if (!verifyCode) {
-//     return message.warning("请输入验证码！");
-//   }
-//   message.loading("登录中...", 0);
-//   state.loading = true;
-// params.password = md5(password);
-// try {
-//   await userStore.login(state.formInline).finally(() => {
-//     state.loading = false;
-//     message.destroy();
-//   });
-//   message.success("登录成功！");
-//   setTimeout(() => router.replace((route.query.redirect as string) ?? "/"));
-// } catch (error: any) {
-//   Modal.error({
-//     title: () => "提示",
-//     content: () => error.message,
-//   });
-//   setCaptcha();
-// }
-// };
+  public clickFunc(): void {
+    console.log(this.name);
+    console.log(this.msg);
+  }
+}
 </script>
 
 <style lang="less" scoped>
