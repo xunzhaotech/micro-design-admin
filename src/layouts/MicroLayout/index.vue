@@ -5,22 +5,11 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <div id="userLayout" :class="['user-layout-wrapper', isMobile && 'mobile']">
+  <div id="microLayout" :class="['micro-layout-wrapper', isMobile && 'mobile']">
     <div class="container">
       <!-- top -->
       <header class="top">
-        <h1 class="header">
-          <a href="/">
-            <img
-              width="50"
-              height="50"
-              src="~@/assets/images/logo.png"
-              class="logo"
-              alt="logo"
-            />
-            <span class="title">Micro Admin</span>
-          </a>
-        </h1>
+        <h1 class="header">MicroAadmin</h1>
         <p class="desc">一个基于企业的管理系统</p>
       </header>
       <!-- content -->
