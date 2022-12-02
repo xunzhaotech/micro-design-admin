@@ -7,6 +7,62 @@ export const pagesData = {
   "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
   // path: /en/guide/
   "v-e6412400": () => import(/* webpackChunkName: "v-e6412400" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/guide/index.html.js").then(({ data }) => data),
+  // path: /pages/about/
+  "v-7f8dff34": () => import(/* webpackChunkName: "v-7f8dff34" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/about/index.html.js").then(({ data }) => data),
+  // path: /pages/cli/
+  "v-4f968e33": () => import(/* webpackChunkName: "v-4f968e33" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/cli/index.html.js").then(({ data }) => data),
+  // path: /pages/components/BASE.html
+  "v-19f2e413": () => import(/* webpackChunkName: "v-19f2e413" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BASE.html.js").then(({ data }) => data),
+  // path: /pages/components/BUSINESS.html
+  "v-1d73c304": () => import(/* webpackChunkName: "v-1d73c304" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BUSINESS.html.js").then(({ data }) => data),
+  // path: /pages/components/
+  "v-18603796": () => import(/* webpackChunkName: "v-18603796" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/index.html.js").then(({ data }) => data),
+  // path: /pages/course/backend.html
+  "v-3f8fb495": () => import(/* webpackChunkName: "v-3f8fb495" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/backend.html.js").then(({ data }) => data),
+  // path: /pages/course/deploy.html
+  "v-27985efc": () => import(/* webpackChunkName: "v-27985efc" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/deploy.html.js").then(({ data }) => data),
+  // path: /pages/course/design.html
+  "v-913323ea": () => import(/* webpackChunkName: "v-913323ea" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/design.html.js").then(({ data }) => data),
+  // path: /pages/course/frontend.html
+  "v-39d8ea37": () => import(/* webpackChunkName: "v-39d8ea37" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/frontend.html.js").then(({ data }) => data),
+  // path: /pages/course/operate.html
+  "v-19f9f0b6": () => import(/* webpackChunkName: "v-19f9f0b6" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/operate.html.js").then(({ data }) => data),
+  // path: /pages/course/project.html
+  "v-430c7b30": () => import(/* webpackChunkName: "v-430c7b30" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/project.html.js").then(({ data }) => data),
+  // path: /pages/course/prototype.html
+  "v-f00d6a72": () => import(/* webpackChunkName: "v-f00d6a72" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/prototype.html.js").then(({ data }) => data),
+  // path: /pages/course/test.html
+  "v-b7fa4892": () => import(/* webpackChunkName: "v-b7fa4892" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/test.html.js").then(({ data }) => data),
+  // path: /pages/course/ui.html
+  "v-21f84ef5": () => import(/* webpackChunkName: "v-21f84ef5" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/ui.html.js").then(({ data }) => data),
+  // path: /pages/outsource/
+  "v-10e08eec": () => import(/* webpackChunkName: "v-10e08eec" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/outsource/index.html.js").then(({ data }) => data),
+  // path: /pages/standard/ANDROID.html
+  "v-6dfc8758": () => import(/* webpackChunkName: "v-6dfc8758" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/ANDROID.html.js").then(({ data }) => data),
+  // path: /pages/standard/IOS.html
+  "v-bb6d310c": () => import(/* webpackChunkName: "v-bb6d310c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/IOS.html.js").then(({ data }) => data),
+  // path: /pages/standard/
+  "v-1aafb724": () => import(/* webpackChunkName: "v-1aafb724" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/index.html.js").then(({ data }) => data),
+  // path: /pages/store/
+  "v-402454dc": () => import(/* webpackChunkName: "v-402454dc" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/store/index.html.js").then(({ data }) => data),
+  // path: /pages/study/guide.html
+  "v-ac2156f2": () => import(/* webpackChunkName: "v-ac2156f2" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/study/guide.html.js").then(({ data }) => data),
+  // path: /pages/study/
+  "v-401f44ac": () => import(/* webpackChunkName: "v-401f44ac" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/study/index.html.js").then(({ data }) => data),
+  // path: /pages/templates/
+  "v-06b4b78c": () => import(/* webpackChunkName: "v-06b4b78c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/templates/index.html.js").then(({ data }) => data),
+  // path: /pages/tools/
+  "v-3d47b850": () => import(/* webpackChunkName: "v-3d47b850" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/tools/index.html.js").then(({ data }) => data),
+  // path: /pages/videos/APP%E7%9B%B4%E6%92%AD%E6%B5%81%E7%A8%8B.html
+  "v-47ef133d": () => import(/* webpackChunkName: "v-47ef133d" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/APP直播流程.html.js").then(({ data }) => data),
+  // path: /pages/videos/
+  "v-adccfb9a": () => import(/* webpackChunkName: "v-adccfb9a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/index.html.js").then(({ data }) => data),
+  // path: /pages/videos/%E6%8A%80%E6%9C%AF%E6%A0%88%E8%AF%B4%E6%98%8E.html
+  "v-bada069c": () => import(/* webpackChunkName: "v-bada069c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/技术栈说明.html.js").then(({ data }) => data),
+  // path: /pages/videos/%E6%B7%B7%E5%90%88APP%E6%89%93%E5%8C%85.html
+  "v-aaf26d4a": () => import(/* webpackChunkName: "v-aaf26d4a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/混合APP打包.html.js").then(({ data }) => data),
+  // path: /pages/videos/%E7%A6%BE%E6%B2%90%E5%BA%B7APP%E5%8A%9F%E8%83%BD%E5%8F%8A%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3.html
+  "v-6a7eaa78": () => import(/* webpackChunkName: "v-6a7eaa78" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/禾沐康APP功能及技术详解.html.js").then(({ data }) => data),
   // path: /en/pages/about/
   "v-80d1d30c": () => import(/* webpackChunkName: "v-80d1d30c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/about/index.html.js").then(({ data }) => data),
   // path: /en/pages/cli/
@@ -17,8 +73,6 @@ export const pagesData = {
   "v-11f007d0": () => import(/* webpackChunkName: "v-11f007d0" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/components/BUSINESS.html.js").then(({ data }) => data),
   // path: /en/pages/components/
   "v-e81f0abe": () => import(/* webpackChunkName: "v-e81f0abe" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/components/index.html.js").then(({ data }) => data),
-  // path: /en/pages/outsource/
-  "v-4f0ca49e": () => import(/* webpackChunkName: "v-4f0ca49e" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/outsource/index.html.js").then(({ data }) => data),
   // path: /en/pages/course/backend.html
   "v-5d991f01": () => import(/* webpackChunkName: "v-5d991f01" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/course/backend.html.js").then(({ data }) => data),
   // path: /en/pages/course/deploy.html
@@ -39,26 +93,24 @@ export const pagesData = {
   "v-61c92e6a": () => import(/* webpackChunkName: "v-61c92e6a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/course/test.html.js").then(({ data }) => data),
   // path: /en/pages/course/ui.html
   "v-5a391109": () => import(/* webpackChunkName: "v-5a391109" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/course/ui.html.js").then(({ data }) => data),
+  // path: /en/pages/outsource/
+  "v-4f0ca49e": () => import(/* webpackChunkName: "v-4f0ca49e" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/outsource/index.html.js").then(({ data }) => data),
   // path: /en/pages/standard/ANDROID.html
   "v-2f5506c4": () => import(/* webpackChunkName: "v-2f5506c4" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/standard/ANDROID.html.js").then(({ data }) => data),
   // path: /en/pages/standard/IOS.html
   "v-4b7b0634": () => import(/* webpackChunkName: "v-4b7b0634" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/standard/IOS.html.js").then(({ data }) => data),
   // path: /en/pages/standard/
   "v-589365da": () => import(/* webpackChunkName: "v-589365da" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/standard/index.html.js").then(({ data }) => data),
+  // path: /en/pages/store/
+  "v-416828b4": () => import(/* webpackChunkName: "v-416828b4" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/store/index.html.js").then(({ data }) => data),
   // path: /en/pages/study/guide.html
   "v-55f03cca": () => import(/* webpackChunkName: "v-55f03cca" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/study/guide.html.js").then(({ data }) => data),
   // path: /en/pages/study/
   "v-41631884": () => import(/* webpackChunkName: "v-41631884" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/study/index.html.js").then(({ data }) => data),
-  // path: /en/pages/store/
-  "v-416828b4": () => import(/* webpackChunkName: "v-416828b4" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/store/index.html.js").then(({ data }) => data),
   // path: /en/pages/templates/
   "v-5422904e": () => import(/* webpackChunkName: "v-5422904e" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/templates/index.html.js").then(({ data }) => data),
-  // path: /pages/about/
-  "v-7f8dff34": () => import(/* webpackChunkName: "v-7f8dff34" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/about/index.html.js").then(({ data }) => data),
   // path: /en/pages/tools/
   "v-3e8b8c28": () => import(/* webpackChunkName: "v-3e8b8c28" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/tools/index.html.js").then(({ data }) => data),
-  // path: /pages/cli/
-  "v-4f968e33": () => import(/* webpackChunkName: "v-4f968e33" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/cli/index.html.js").then(({ data }) => data),
   // path: /en/pages/videos/APP%E7%9B%B4%E6%92%AD%E6%B5%81%E7%A8%8B.html
   "v-6cd3cda9": () => import(/* webpackChunkName: "v-6cd3cda9" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/videos/APP直播流程.html.js").then(({ data }) => data),
   // path: /en/pages/videos/
@@ -69,78 +121,26 @@ export const pagesData = {
   "v-6128f872": () => import(/* webpackChunkName: "v-6128f872" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/videos/混合APP打包.html.js").then(({ data }) => data),
   // path: /en/pages/videos/%E7%A6%BE%E6%B2%90%E5%BA%B7APP%E5%8A%9F%E8%83%BD%E5%8F%8A%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3.html
   "v-31e7dbe4": () => import(/* webpackChunkName: "v-31e7dbe4" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/videos/禾沐康APP功能及技术详解.html.js").then(({ data }) => data),
-  // path: /pages/components/BASE.html
-  "v-19f2e413": () => import(/* webpackChunkName: "v-19f2e413" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BASE.html.js").then(({ data }) => data),
-  // path: /pages/components/BUSINESS.html
-  "v-1d73c304": () => import(/* webpackChunkName: "v-1d73c304" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/BUSINESS.html.js").then(({ data }) => data),
-  // path: /pages/components/
-  "v-18603796": () => import(/* webpackChunkName: "v-18603796" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/components/index.html.js").then(({ data }) => data),
-  // path: /pages/outsource/
-  "v-10e08eec": () => import(/* webpackChunkName: "v-10e08eec" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/outsource/index.html.js").then(({ data }) => data),
-  // path: /pages/course/backend.html
-  "v-3f8fb495": () => import(/* webpackChunkName: "v-3f8fb495" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/backend.html.js").then(({ data }) => data),
-  // path: /pages/course/deploy.html
-  "v-27985efc": () => import(/* webpackChunkName: "v-27985efc" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/deploy.html.js").then(({ data }) => data),
-  // path: /pages/course/design.html
-  "v-913323ea": () => import(/* webpackChunkName: "v-913323ea" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/design.html.js").then(({ data }) => data),
-  // path: /pages/course/frontend.html
-  "v-39d8ea37": () => import(/* webpackChunkName: "v-39d8ea37" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/frontend.html.js").then(({ data }) => data),
-  // path: /pages/course/operate.html
-  "v-19f9f0b6": () => import(/* webpackChunkName: "v-19f9f0b6" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/operate.html.js").then(({ data }) => data),
-  // path: /pages/course/project.html
-  "v-430c7b30": () => import(/* webpackChunkName: "v-430c7b30" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/project.html.js").then(({ data }) => data),
-  // path: /pages/course/prototype.html
-  "v-f00d6a72": () => import(/* webpackChunkName: "v-f00d6a72" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/prototype.html.js").then(({ data }) => data),
-  // path: /pages/course/test.html
-  "v-b7fa4892": () => import(/* webpackChunkName: "v-b7fa4892" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/test.html.js").then(({ data }) => data),
-  // path: /pages/course/ui.html
-  "v-21f84ef5": () => import(/* webpackChunkName: "v-21f84ef5" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/course/ui.html.js").then(({ data }) => data),
-  // path: /pages/standard/ANDROID.html
-  "v-6dfc8758": () => import(/* webpackChunkName: "v-6dfc8758" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/ANDROID.html.js").then(({ data }) => data),
-  // path: /pages/standard/IOS.html
-  "v-bb6d310c": () => import(/* webpackChunkName: "v-bb6d310c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/IOS.html.js").then(({ data }) => data),
-  // path: /pages/standard/
-  "v-1aafb724": () => import(/* webpackChunkName: "v-1aafb724" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/standard/index.html.js").then(({ data }) => data),
-  // path: /pages/store/
-  "v-402454dc": () => import(/* webpackChunkName: "v-402454dc" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/store/index.html.js").then(({ data }) => data),
-  // path: /pages/study/guide.html
-  "v-ac2156f2": () => import(/* webpackChunkName: "v-ac2156f2" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/study/guide.html.js").then(({ data }) => data),
-  // path: /pages/study/
-  "v-401f44ac": () => import(/* webpackChunkName: "v-401f44ac" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/study/index.html.js").then(({ data }) => data),
-  // path: /pages/templates/
-  "v-06b4b78c": () => import(/* webpackChunkName: "v-06b4b78c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/templates/index.html.js").then(({ data }) => data),
-  // path: /pages/tools/
-  "v-3d47b850": () => import(/* webpackChunkName: "v-3d47b850" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/tools/index.html.js").then(({ data }) => data),
-  // path: /en/pages/project/react/
-  "v-41760304": () => import(/* webpackChunkName: "v-41760304" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/react/index.html.js").then(({ data }) => data),
-  // path: /en/pages/project/micrcservice/
-  "v-0f364724": () => import(/* webpackChunkName: "v-0f364724" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/micrcservice/index.html.js").then(({ data }) => data),
-  // path: /en/pages/project/angular/
-  "v-235b52fb": () => import(/* webpackChunkName: "v-235b52fb" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/angular/index.html.js").then(({ data }) => data),
-  // path: /en/pages/project/vue/
-  "v-453c32d7": () => import(/* webpackChunkName: "v-453c32d7" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/vue/index.html.js").then(({ data }) => data),
-  // path: /en/pages/project/wechat/
-  "v-11f82f9b": () => import(/* webpackChunkName: "v-11f82f9b" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/wechat/index.html.js").then(({ data }) => data),
   // path: /pages/project/angular/
   "v-0f7a7432": () => import(/* webpackChunkName: "v-0f7a7432" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/angular/index.html.js").then(({ data }) => data),
   // path: /pages/project/micrcservice/
   "v-4dddc7b8": () => import(/* webpackChunkName: "v-4dddc7b8" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/micrcservice/index.html.js").then(({ data }) => data),
-  // path: /pages/project/wechat/
-  "v-4220af2f": () => import(/* webpackChunkName: "v-4220af2f" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/wechat/index.html.js").then(({ data }) => data),
-  // path: /pages/videos/APP%E7%9B%B4%E6%92%AD%E6%B5%81%E7%A8%8B.html
-  "v-47ef133d": () => import(/* webpackChunkName: "v-47ef133d" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/APP直播流程.html.js").then(({ data }) => data),
-  // path: /pages/videos/
-  "v-adccfb9a": () => import(/* webpackChunkName: "v-adccfb9a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/index.html.js").then(({ data }) => data),
-  // path: /pages/videos/%E6%8A%80%E6%9C%AF%E6%A0%88%E8%AF%B4%E6%98%8E.html
-  "v-bada069c": () => import(/* webpackChunkName: "v-bada069c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/技术栈说明.html.js").then(({ data }) => data),
-  // path: /pages/videos/%E6%B7%B7%E5%90%88APP%E6%89%93%E5%8C%85.html
-  "v-aaf26d4a": () => import(/* webpackChunkName: "v-aaf26d4a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/混合APP打包.html.js").then(({ data }) => data),
-  // path: /pages/videos/%E7%A6%BE%E6%B2%90%E5%BA%B7APP%E5%8A%9F%E8%83%BD%E5%8F%8A%E6%8A%80%E6%9C%AF%E8%AF%A6%E8%A7%A3.html
-  "v-6a7eaa78": () => import(/* webpackChunkName: "v-6a7eaa78" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/videos/禾沐康APP功能及技术详解.html.js").then(({ data }) => data),
-  // path: /pages/project/vue/
-  "v-4d6c087a": () => import(/* webpackChunkName: "v-4d6c087a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/vue/index.html.js").then(({ data }) => data),
   // path: /pages/project/react/
   "v-b1f7872c": () => import(/* webpackChunkName: "v-b1f7872c" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/react/index.html.js").then(({ data }) => data),
+  // path: /pages/project/vue/
+  "v-4d6c087a": () => import(/* webpackChunkName: "v-4d6c087a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/vue/index.html.js").then(({ data }) => data),
+  // path: /pages/project/wechat/
+  "v-4220af2f": () => import(/* webpackChunkName: "v-4220af2f" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/pages/project/wechat/index.html.js").then(({ data }) => data),
+  // path: /en/pages/project/angular/
+  "v-235b52fb": () => import(/* webpackChunkName: "v-235b52fb" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/angular/index.html.js").then(({ data }) => data),
+  // path: /en/pages/project/micrcservice/
+  "v-0f364724": () => import(/* webpackChunkName: "v-0f364724" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/micrcservice/index.html.js").then(({ data }) => data),
+  // path: /en/pages/project/react/
+  "v-41760304": () => import(/* webpackChunkName: "v-41760304" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/react/index.html.js").then(({ data }) => data),
+  // path: /en/pages/project/vue/
+  "v-453c32d7": () => import(/* webpackChunkName: "v-453c32d7" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/vue/index.html.js").then(({ data }) => data),
+  // path: /en/pages/project/wechat/
+  "v-11f82f9b": () => import(/* webpackChunkName: "v-11f82f9b" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/en/pages/project/wechat/index.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"D:/DocsAwesome/micro-design-admin/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }
